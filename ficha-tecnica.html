@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Ficha técnica del proyecto de identidad y comunicación de Yaguar Tours." name="description"/>
+<title>
+   Ficha Técnica | YAGUAR TOURS
+  </title>
+<link href="css/yaguar.css" rel="stylesheet"/>
+<style>
+   /* Maquetación de la ficha técnica basada en la organización del documento de referencia */
+.ft-paper {
+    font-family: Arial,sans-serif;
+    color: #1b1b1b;
+    background: #fff;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 28px 26px 62px;
+    line-height: 1.55;
+}
+
+.ft-paper * {
+    box-sizing: border-box;
+}
+
+.ft-paper h1,.ft-paper h2,.ft-paper h3 {
+    color: #151515;
+}
+
+.ft-paper h1 {
+    text-align: center;
+    font-size: clamp(27px,4vw,39px);
+    line-height: 1.18;
+    margin: 0 0 27px;
+    font-weight: 800;
+}
+
+.ft-paper h2 {
+    font-size: clamp(23px,3vw,30px);
+    font-weight: 800;
+    margin: 38px 0 15px;
+}
+
+.ft-paper h3 {
+    font-size: 18px;
+    margin: 18px 0 8px;
+}
+
+.ft-paper p {
+    margin: 10px 0 15px;
+}
+
+.ft-brand-title {
+    font-size: clamp(26px,4vw,36px);
+    font-weight: 800;
+    margin: 0 0 3px;
+}
+
+.ft-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 12px;
+}
+
+.ft-photo {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.ft-cover {
+    height: 360px;
+    object-position: center;
+    background: #eaf4ee;
+}
+
+.ft-visual {
+    width: 100%;
+    background: #f1f5ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.ft-visual--symbol {
+    height: 350px;
+    padding: 35px;
+    background: #f8f6ef;
+}
+
+.ft-visual--symbol img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.ft-visual--verbal {
+    min-height: 245px;
+    background: linear-gradient(135deg,#004d2e,#007a41);
+    padding: 30px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ft-visual--verbal b {
+    font-size: clamp(23px,4vw,36px);
+    letter-spacing: .05em;
+}
+
+.ft-visual--verbal span {
+    color: #ffe4b0;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+.ft-visual--verbal small {
+    margin-top: 16px;
+    color: #e6f6ed;
+}
+
+.ft-mood {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 10px;
+    margin: 0 0 12px;
+}
+
+.ft-mood-item {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    background: #eaf4ee;
+}
+
+.ft-mood-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ft-mood-item span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 8px;
+    background: linear-gradient(transparent,#0009);
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ft-mood-item--green {
+    background: linear-gradient(140deg,#004d2e,#16864f);
+}
+
+.ft-mood-item--orange {
+    background: linear-gradient(140deg,#715043,#f5a247);
+}
+
+.ft-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 16px;
+    table-layout: fixed;
+}
+
+.ft-table th,.ft-table td {
+    border: 1px solid #333;
+    padding: 9px 10px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+.ft-table thead th {
+    background: #f8f8f8;
+    text-align: center;
+    font-weight: 700;
+}
+
+.ft-table td:first-child {
+    width: 29%;
+}
+
+.ft-table--symbols td:first-child {
+    width: 35%;
+}
+
+.ft-paper .ft-callout {
+    font-weight: 700;
+    margin: 16px 0 5px;
+}
+
+.ft-paper .ft-exercise {
+    color: #ae1414;
+    text-decoration: underline;
+    font-weight: 800;
+    margin: 27px 0;
+}
+
+.ft-paper section {
+    scroll-margin-top: 40px;
+}
+
+.ft-paper .ft-note {
+    color: #666;
+    font-size: 12px;
+}
+
+.ft-paper .ft-source {
+    color: #666;
+    font-size: 13px;
+    margin: 2px 0 16px;
+}
+
+.ft-palette {
+    display: flex;
+    gap: 10px;
+    margin: 8px 0 15px;
+}
+
+.ft-palette div {
+    height: 12px;
+    flex: 1;
+}
+
+@media (max-width:650px) {
+    .ft-paper {
+        padding: 25px 14px 55px;
+    }
+
+    .ft-cover {
+        height: 220px;
+    }
+
+    .ft-mood {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+    .ft-mood-item {
+        height: 135px;
+    }
+
+    .ft-table th,.ft-table td {
+        font-size: 13px;
+        padding: 8px 6px;
+    }
+
+    .ft-visual--symbol {
+        height: 260px;
+    }
+
+}
+
+/* Diseño editorial Yaguar Tours: identidad corporativa */
+:root {
+    --ft-forest: #004d2e;
+    --ft-leaf: #007a41;
+    --ft-fresh: #16864f;
+    --ft-cream: #eaf4ee;
+    --ft-orange: #f5a247;
+    --ft-earth: #715043;
+    --ft-ink: #17382a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #edf4ee;
+}
+
+.ft-paper {
+    max-width: 1130px;
+    margin: 38px auto 64px;
+    padding: 0 0 30px;
+    border-radius: 28px;
+    background: transparent;
+    color: var(--ft-ink);
+    line-height: 1.75;
+    font-family: Arial,sans-serif;
+    overflow: visible;
+}
+
+.ft-paper h1,.ft-paper h2,.ft-paper h3 {
+    color: var(--ft-forest);
+}
+
+.ft-intro {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(120deg,#003a23 0%,#00673c 65%,#16864f 100%);
+    border-radius: 26px;
+    padding: 45px clamp(24px,5vw,64px) 42px;
+    box-shadow: 0 18px 44px #004d2e2e;
+    color: #fff;
+}
+
+.ft-intro:before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -125px;
+    top: -130px;
+    border: 65px solid #ffffff0d;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.ft-intro h1 {
+    font-size: clamp(29px,4.3vw,50px);
+    letter-spacing: -.035em;
+    line-height: 1.12;
+    text-align: left;
+    max-width: 740px;
+    color: white;
+    margin: 15px 0 20px;
+}
+
+.ft-intro .ft-brand-title {
+    color: #ffca7e;
+    letter-spacing: .055em;
+    font-size: clamp(23px,3.2vw,33px);
+    margin-bottom: 2px;
+}
+
+.ft-intro .ft-subtitle {
+    color: #d5eee0;
+    letter-spacing: .14em;
+    font-weight: 700;
+    font-size: clamp(10px,1.5vw,13px);
+    margin-bottom: 24px;
+}
+
+.ft-intro .ft-cover {
+    height: 390px;
+    border-radius: 18px;
+    border: 4px solid #ffffff3d;
+    box-shadow: 0 15px 30px #002b194a;
+}
+
+.ft-intro>p {
+    background: #ffffff16;
+    border: 1px solid #ffffff3a;
+    color: #f3fff7;
+    border-radius: 16px;
+    padding: 18px 21px;
+    margin: 23px 0 0;
+    line-height: 1.9;
+}
+
+.ft-intro>p strong {
+    color: #ffc77b;
+}
+
+.ft-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin: 23px 0 0;
+}
+
+.ft-nav a {
+    border-radius: 100px;
+    background: #ffffff14;
+    border: 1px solid #ffffff46;
+    color: white !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 9px 15px;
+    transition: background .2s,transform .2s;
+}
+
+.ft-nav a:hover,.ft-nav a:focus-visible {
+    background: var(--ft-orange);
+    color: #213c27 !important;
+    transform: translateY(-2px);
+}
+
+.ft-paper section {
+    margin-top: 30px;
+    padding: clamp(22px,4vw,42px);
+    background: #fff;
+    border-radius: 23px;
+    border: 1px solid #d7e8db;
+    box-shadow: 0 12px 35px #004d2e0c;
+    scroll-margin-top: 100px;
+}
+
+.ft-paper section h2 {
+    margin: 0 0 23px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #dcece1;
+    font-size: clamp(23px,3vw,34px);
+    letter-spacing: -.025em;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.ft-paper section h2:before {
+    content: "";
+    width: 8px;
+    height: 34px;
+    background: var(--ft-orange);
+    border-radius: 15px;
+    flex: none;
+}
+
+.ft-paper h3 {
+    font-size: 18px;
+}
+
+.ft-paper p {
+    font-size: 15px;
+    line-height: 1.85;
+    color: #426354;
+}
+
+.ft-paper p strong {
+    color: var(--ft-forest);
+}
+
+.ft-photo {
+    border-radius: 16px;
+}
+
+.ft-mood {
+    gap: 14px;
+    margin: 0 0 24px;
+}
+
+.ft-mood-item {
+    height: 188px;
+    border-radius: 16px;
+    box-shadow: 0 7px 18px #003a2318;
+}
+
+.ft-mood-item span {
+    font-size: 12px;
+    letter-spacing: .08em;
+    padding: 18px 12px;
+    background: linear-gradient(transparent,#002d1bc9);
+}
+
+.ft-visual--symbol {
+    border-radius: 17px;
+    height: 330px;
+    background: radial-gradient(circle,#fff 30%,#eaf4ee 100%);
+    margin-bottom: 22px;
+    border: 1px solid #e0ebe2;
+}
+
+.ft-visual--symbol img {
+    mix-blend-mode: normal;
+    border-radius: 12px;
+    box-shadow: 0 8px 28px #004d2e21;
+}
+
+.ft-visual--verbal {
+    border-radius: 18px;
+    min-height: 260px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(130deg,#003a23,#007a41 73%,#16864f);
+    margin-bottom: 23px;
+    box-shadow: 0 12px 25px #004d2e24;
+}
+
+.ft-visual--verbal:after {
+    content: "✦";
+    position: absolute;
+    right: 8%;
+    top: 11%;
+    font-size: 90px;
+    color: #ffffff13;
+}
+
+.ft-visual--verbal b {
+    color: #fff;
+    font-size: clamp(28px,4.5vw,48px);
+    letter-spacing: .04em;
+}
+
+.ft-visual--verbal span {
+    color: #ffc47b;
+    font-size: clamp(18px,2.6vw,26px);
+    font-style: italic;
+}
+
+.ft-visual--verbal small {
+    letter-spacing: .2em;
+    font-size: 11px;
+}
+
+.ft-table {
+    border: 1px solid #d7e8dd;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px #004d2e0b;
+    margin: 15px 0 24px;
+}
+
+.ft-table th,.ft-table td {
+    border: 0;
+    border-bottom: 1px solid #e0eae3;
+    padding: 13px 16px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.ft-table th+th,.ft-table td+td {
+    border-left: 1px solid #e0eae3;
+}
+
+.ft-table thead th {
+    background: var(--ft-forest);
+    color: #fff;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+}
+
+.ft-table tbody tr:nth-child(even) {
+    background: #f1f8f3;
+}
+
+.ft-table tbody tr:hover {
+    background: #e5f3e9;
+}
+
+.ft-table tbody td:first-child {
+    color: var(--ft-forest);
+    font-weight: 700;
+}
+
+.ft-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.ft-paper .ft-callout {
+    color: var(--ft-forest);
+    font-weight: 800;
+    font-size: 17px;
+    margin: 24px 0 6px;
+    padding-left: 14px;
+    border-left: 4px solid var(--ft-orange);
+}
+
+.ft-paper .ft-exercise {
+    margin: 25px 0 0;
+    padding: 18px 20px;
+    border-radius: 12px;
+    background: #fff4e5;
+    border: 1px solid #f6d6ac;
+    color: #815128;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.ft-paper #conclusion {
+    background: linear-gradient(140deg,#004d2e,#007a41);
+    border-color: transparent;
+    box-shadow: 0 16px 35px #004d2e30;
+}
+
+.ft-paper #conclusion h2,.ft-paper #conclusion p,.ft-paper #conclusion p strong {
+    color: white;
+}
+
+.ft-paper #conclusion h2 {
+    border-bottom-color: #ffffff38;
+}
+
+.ft-paper #conclusion .ft-note {
+    color: #d6e9de;
+}
+
+@media (max-width:760px) {
+    .ft-paper {
+        margin: 15px 12px 35px;
+    }
+
+    .ft-intro {
+        padding: 25px 20px;
+    }
+
+    .ft-intro .ft-cover {
+        height: 230px;
+    }
+
+    .ft-paper section {
+        margin-top: 15px;
+        padding: 22px 16px;
+    }
+
+    .ft-mood {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+    .ft-mood-item {
+        height: 145px;
+    }
+
+    .ft-table th,.ft-table td {
+        padding: 10px 9px;
+        font-size: 12px;
+    }
+
+    .ft-nav a {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+
+}
+
+@media print {
+    body {
+        background: white;
+    }
+
+    .ft-intro,.ft-paper section {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .ft-nav {
+        display: none;
+    }
+
+    .ft-paper {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .ft-paper section {
+        margin-top: 16px;
+    }
+
+}
+
+/* Imagen única de imagología: sustituye al conjunto de cuatro tarjetas */
+.ft-imagologia-image {
+    position: relative;
+    width: 100%;
+    height: clamp(280px,42vw,470px);
+    margin: 0 0 26px;
+    border: 2px solid #d9e9dd;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(145deg,#eaf4ee,#dcebe0);
+    box-shadow: 0 9px 28px #004d2e15;
+}
+
+.ft-imagologia-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ft-image-placeholder {
+    display: none;
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    padding: 24px;
+    color: #004d2e;
+}
+
+.ft-image-placeholder span {
+    font-weight: 800;
+    font-size: clamp(19px,3vw,28px);
+}
+
+.ft-image-placeholder small {
+    color: #526c5b;
+    font-size: 14px;
+}
+
+.ft-image-unavailable .ft-image-placeholder {
+    display: flex;
+}
+
+@media (max-width:650px) {
+    .ft-imagologia-image {
+        height: 260px;
+        border-radius: 15px;
+    }
+
+}
+
+/* Ajuste responsivo: las fotografías respetan sus marcos sin deformarse. */
+.ft-imagologia-image {
+    height: auto;
+    aspect-ratio: 16/9;
+    display: grid;
+    place-items: center;
+}
+
+.ft-imagologia-image > img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+    grid-area: 1/1;
+}
+
+.ft-intro .ft-cover {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 16px;
+}
+
+.ft-visual--symbol img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+@media (max-width:650px) {
+    .ft-imagologia-image {
+        height: auto;
+        aspect-ratio: 4/3;
+    }
+
+    .ft-intro .ft-cover {
+        height: auto;
+        aspect-ratio: 4/3;
+    }
+
+}
+
+/* Visor accesible de imágenes de la ficha técnica */
+.ft-paper img.ft-zoomable {
+    cursor: zoom-in;
+    transition: filter .2s ease,transform .2s ease;
+}
+
+.ft-paper img.ft-zoomable:hover {
+    filter: brightness(.94);
+}
+
+.ft-paper img.ft-zoomable:focus-visible {
+    outline: 4px solid #f5a247;
+    outline-offset: 4px;
+}
+
+.ft-lightbox[hidden] {
+    display: none !important;
+}
+
+.ft-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(0,25,15,.94);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 18px 30px;
+    gap: 15px;
+}
+
+.ft-lightbox img {
+    display: block;
+    max-width: min(95vw,1450px);
+    max-height: calc(100dvh - 145px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 9px;
+    box-shadow: 0 16px 55px #0008;
+}
+
+.ft-lightbox figcaption {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    max-width: 85vw;
+}
+
+.ft-lightbox-close {
+    position: absolute;
+    right: clamp(14px,3vw,40px);
+    top: 14px;
+    border: 1px solid #ffffff77;
+    border-radius: 999px;
+    background: #004d2e;
+    color: #fff;
+    cursor: pointer;
+    font: 700 16px Arial,sans-serif;
+    padding: 12px 18px;
+}
+
+.ft-lightbox-close:hover,.ft-lightbox-close:focus-visible {
+    background: #007a41;
+    outline: 2px solid #f5a247;
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .ft-paper img.ft-zoomable {
+        transition: none;
+    }
+
+}
+
+/* Espacios de imagen: Imagen verbal, ejercicio y dos símbolos */
+.ft-visual--verbal {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(230px,.82fr);
+    align-items: stretch;
+    gap: 22px;
+    padding: 28px;
+    min-height: 280px;
+    text-align: left;
+}
+
+.ft-visual--verbal:after {
+    pointer-events: none;
+}
+
+.ft-verbal-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.ft-verbal-text b {
+    font-size: clamp(24px,3.1vw,42px);
+    line-height: 1.12;
+}
+
+.ft-verbal-text span {
+    margin-top: 15px;
+}
+
+.ft-verbal-text small {
+    margin-top: 17px;
+}
+
+.ft-slot {
+    margin: 0;
+    min-width: 0;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    isolation: isolate;
+    border-radius: 16px;
+    border: 2px dashed #96c3a4;
+    background: linear-gradient(145deg,#f7fbf8,#eaf4ee);
+    aspect-ratio: 16/9;
+}
+
+.ft-slot-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    padding: 20px;
+    color: #004d2e;
+}
+
+.ft-slot-icon {
+    font-size: 35px;
+    line-height: 1;
+    color: #16864f;
+}
+
+.ft-slot-content strong {
+    font-size: 16px;
+    line-height: 1.3;
+    color: #004d2e;
+}
+
+.ft-slot-content small {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #537361;
+}
+
+.ft-slot img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.ft-slot:has(img) {
+    border-style: solid;
+    background: white;
+}
+
+.ft-visual--verbal .ft-slot {
+    width: 100%;
+    align-self: center;
+    aspect-ratio: 4/3;
+    background: #ffffffef;
+    border-color: #f5a247;
+}
+
+.ft-slot--exercise {
+    margin: 17px 0 12px;
+    min-height: 260px;
+}
+
+.ft-symbol-description {
+    margin: 0 0 13px !important;
+    font-size: 14px !important;
+}
+
+.ft-slot--symbol {
+    width: min(100%,410px);
+    min-height: 150px;
+    aspect-ratio: 16/9;
+    border-radius: 13px;
+}
+
+.ft-slot--symbol .ft-slot-icon {
+    font-size: 28px;
+}
+
+.ft-slot--symbol .ft-slot-content strong {
+    font-size: 14px;
+}
+
+@media (max-width:700px) {
+    .ft-visual--verbal {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .ft-verbal-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .ft-visual--verbal .ft-slot {
+        aspect-ratio: 16/9;
+    }
+
+    .ft-slot--exercise {
+        min-height: 190px;
+    }
+
+}
+
+/* Imágenes incorporadas desde código: sin botones de carga */
+.ft-slot {
+    position: relative;
+    min-height: 220px;
+    display: grid;
+    place-items: center;
+    padding: 14px;
+}
+
+.ft-slot .ft-slot-content {
+    grid-area: 1/1;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.ft-slot .ft-slot-image {
+    grid-area: 1/1;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: none;
+    border-radius: 10px;
+}
+
+.ft-slot.ft-has-image .ft-slot-image {
+    display: block;
+}
+
+.ft-slot.ft-has-image .ft-slot-content {
+    display: none;
+}
+
+.ft-visual--verbal .ft-slot {
+    min-height: 235px;
+}
+
+.ft-slot--symbol {
+    min-height: 190px;
+}
+
+.ft-slot--exercise {
+    min-height: 270px;
+}
+
+@media (max-width:650px) {
+    .ft-slot--exercise {
+        min-height: 210px;
+    }
+
+    .ft-slot--symbol {
+        min-height: 190px;
+    }
+
+}
+  </style>
+<style>
+/* Las imágenes se cargan exclusivamente desde la carpeta img/. */
+.ft-intro .ft-cover {background:#eaf4ee;min-height:210px;}
+.ft-visual--symbol {background:#eaf4ee;}
+.ft-slot.ft-has-image .ft-slot-image {object-fit:contain;}
+</style><style>
+
+/* Corrección: las imágenes de los cuadros se ven sin depender de JavaScript. */
+.ft-slot:has(> img.ft-slot-image) > img.ft-slot-image {display:block;position:relative;z-index:2;}
+.ft-slot:has(> img.ft-slot-image) > .ft-slot-content {display:none;}
+.ft-slot .ft-slot-image {min-height:0;max-width:100%;object-fit:contain;}
+.ft-visual--symbol img {display:block;max-width:100%;max-height:100%;object-fit:contain;}
+
+</style>
+<style>
+/* Iconología: símbolos gráficos en la columna SÍMBOLO. */
+#iconologia .ft-table--symbols td:first-child{width:35%;vertical-align:top;}
+#iconologia .ft-table--symbols .ft-slot--symbol{width:100%;max-width:100%;min-height:0;aspect-ratio:4/3;margin:14px 0 0;padding:8px;border-radius:14px;}
+#iconologia .ft-table--symbols .ft-slot--symbol img{width:100%;height:100%;object-fit:contain;}
+#iconologia .ft-table--symbols td:nth-child(2){vertical-align:middle;}
+@media(max-width:600px){#iconologia .ft-table--symbols .ft-slot--symbol{aspect-ratio:1/1;padding:4px;}}
+</style>
+</head>
+<body>
+<div class="topbar">
+<div class="container">
+<span>
+     YAGUAR TOURS · Turismo · Naturaleza · Aventura
+    </span>
+<span>
+     Pangoa · Junín · Perú
+    </span>
+</div>
+</div>
+<header class="navbar">
+<div class="container nav-inner">
+<a class="brand" href="index.html">
+<img alt="Isologo Yaguar Tours" onerror="this.onerror=null;this.src='img/logo.jpg'" src="img/logo-yaguar.png"/>
+<span>
+<strong>
+       YAGUAR TOURS
+      </strong>
+<small>
+       Turismo · Naturaleza · Aventura
+      </small>
+</span>
+</a>
+<nav aria-label="Navegación principal" class="nav-links">
+<a href="index.html">
+      INICIO
+     </a>
+<a href="identidad-corporativa.html">
+      IDENTIDAD CORPORATIVA
+     </a>
+<a href="identidad-visual.html">
+      IDENTIDAD VISUAL
+     </a>
+<a href="imagen-institucional.html">
+      IMAGEN INSTITUCIONAL
+     </a>
+<a href="aplicaciones.html">
+      APLICACIONES
+     </a>
+<a href="comunicacion.html">
+      COMUNICACIÓN
+     </a>
+<a href="manual-identidad.html">
+      MANUAL
+     </a>
+<a href="propuestas-mejora.html">
+      MEJORAS
+     </a>
+<a href="plan-comunicacion.html">
+      PLAN DE COMUNICACIÓN
+     </a>
+<a href="auditoria-imagen.html">
+      AUDITORÍA DE LA IMAGEN
+     </a>
+<a href="analisis-imagen-publica.html">
+      ANÁLISIS DE IMAGEN PÚBLICA DE LA EMPRESA YAGUAR TOURS
+     </a>
+<a aria-current="page" class="active" href="ficha-tecnica.html">
+      FICHA TÉCNICA
+     </a>
+</nav>
+</div>
+</header>
+<main class="ft-paper" id="ficha-tecnica">
+<div class="ft-intro">
+<h1>
+     FICHA TÉCNICA DE IDENTIDAD DE
+     <br/>
+     MARCA
+    </h1>
+<div class="ft-brand-title">
+     YAGUAR TOURS
+    </div>
+<div class="ft-subtitle">
+     IMAGOLOGÍA · ICONOLOGÍA · IMAGEN VERBAL
+    </div>
+<!-- Portada: colocar archivo en img/portada-yaguar.jpg --><img alt="Paisaje natural de la selva central asociado al turismo en Pangoa" aria-label="Ampliar imagen: Paisaje natural de la selva central asociado al turismo en Pangoa" class="ft-photo ft-cover ft-zoomable" loading="lazy" onerror="this.style.visibility='hidden'" onload="this.style.visibility='visible'" role="button" src="img/portada-yaguar.jpg" tabindex="0" title="Haz clic para ampliar la imagen"/>
+<p>
+<strong>
+      Nombre de marca:
+     </strong>
+     Yaguar Tours.
+     <strong>
+      Rubro:
+     </strong>
+     Turismo – agencia de viajes y servicios turísticos.
+     <strong>
+      Concepto:
+     </strong>
+     Naturaleza, aventura y cultura de la selva central.
+     <strong>
+      Eslogan:
+     </strong>
+     «Yaguar Tours, aventura que deja huella».
+     <strong>
+      Estilo gráfico:
+     </strong>
+     Natural y aventurero contemporáneo.
+     <strong>
+      Personalidad:
+     </strong>
+     Cercana, aventurera, inspiradora, positiva y auténtica.
+    </p>
+<nav aria-label="Secciones de ficha técnica" class="ft-nav">
+<a href="#imagologia">
+      01 · Imagología
+     </a>
+<a href="#iconologia">
+      02 · Iconología
+     </a>
+<a href="#imagen-verbal">
+      03 · Imagen verbal
+     </a>
+<a href="#cuadro-comparativo">
+      04 · Comparativo
+     </a>
+<a href="#conclusion">
+      05 · Conclusión
+     </a>
+</nav>
+</div>
+<section id="imagologia">
+<h2>
+     1. IMAGOLOGÍA
+    </h2>
+<figure aria-label="Imagen principal de imagología de Yaguar Tours" class="ft-imagologia-image">
+<!-- Imagología: colocar archivo en img/imagologia-yaguar.png --><img alt="Paleta de colores corporativos y naturaleza de Yaguar Tours" aria-label="Ampliar imagen: Paleta de colores corporativos y naturaleza de Yaguar Tours" class="ft-zoomable" loading="lazy" onerror="this.parentElement.classList.add('ft-image-unavailable')" onload="this.parentElement.classList.remove('ft-image-unavailable')" role="button" src="img/imagologia-yaguar.png" tabindex="0" title="Haz clic para ampliar la imagen"/>
+<div aria-hidden="true" class="ft-image-placeholder">
+<span>
+       Imagen de imagología
+      </span>
+<small>
+       Coloca aquí la fotografía o composición visual de Yaguar Tours
+      </small>
+</div>
+</figure>
+<table class="ft-table">
+<thead>
+<tr>
+<th style="width:29%">
+        Ficha técnica
+       </th>
+<th>
+        Descripción
+       </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+        Definición
+       </td>
+<td>
+        Estudia cómo se construye y percibe la imagen de una marca ante el público.
+       </td>
+</tr>
+<tr>
+<td>
+        Aplicación
+       </td>
+<td>
+        Construcción de la imagen corporativa propuesta de Yaguar Tours.
+       </td>
+</tr>
+<tr>
+<td>
+        Objetivo
+       </td>
+<td>
+        Transmitir una imagen natural, aventurera, confiable y auténtica.
+       </td>
+</tr>
+<tr>
+<td>
+        Personalidad
+       </td>
+<td>
+        Cercana, aventurera, inspiradora, positiva y auténtica.
+       </td>
+</tr>
+<tr>
+<td>
+        Público objetivo
+       </td>
+<td>
+        Estudiantes, trabajadores, familias y turistas nacionales interesados en experiencias de naturaleza, aventura y cultura en Pangoa.
+       </td>
+</tr>
+<tr>
+<td>
+        Identidad visual
+       </td>
+<td>
+        Isologo inspirado en el yaguar y en la biodiversidad de la selva central.
+       </td>
+</tr>
+<tr>
+<td>
+        Colores corporativos
+       </td>
+<td>
+        Verde oscuro, verde claro, verde medio, naranja y tonos marrones.
+       </td>
+</tr>
+<tr>
+<td>
+        Percepción deseada
+       </td>
+<td>
+        Que el visitante relacione la marca con Pangoa, la naturaleza, la aventura y la confianza.
+       </td>
+</tr>
+</tbody>
+</table>
+<p class="ft-callout">
+     Análisis de la marca:
+    </p>
+<p>
+     Yaguar Tours busca proyectar una imagen relacionada con la riqueza natural y cultural de Pangoa, en la selva central del Perú. Su identidad transmite aventura, cercanía y conexión con el entorno mediante recursos visuales inspirados en la biodiversidad y en las experiencias turísticas.
+    </p>
+<p>
+<strong>
+      Resultado esperado:
+     </strong>
+     Una marca reconocible que transmita confianza, autenticidad e identidad territorial.
+    </p>
+</section>
+<section id="iconologia">
+<h2>
+     2. ICONOLOGÍA
+    </h2>
+<div class="ft-visual ft-visual--symbol">
+<!-- Iconología: colocar archivo en img/iconologia-yaguar.png --><img alt="Isologo de Yaguar Tours con las letras G de jaguar y U de palmera" aria-label="Ampliar imagen: Isologo de Yaguar Tours para el análisis iconológico" class="ft-zoomable" loading="lazy" onerror="this.style.visibility='hidden'" onload="this.style.visibility='visible'" role="button" src="img/iconologia-yaguar.png" tabindex="0" title="Haz clic para ampliar la imagen"/>
+</div>
+<table class="ft-table">
+<thead>
+<tr>
+<th style="width:29%">
+        Ficha técnica
+       </th>
+<th>
+        Descripción
+       </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+        Definición
+       </td>
+<td>
+        Estudia e interpreta los significados simbólicos y culturales de las imágenes.
+       </td>
+</tr>
+<tr>
+<td>
+        Aplicación
+       </td>
+<td>
+        Uso de símbolos relacionados con el yaguar, la naturaleza y el turismo de Pangoa.
+       </td>
+</tr>
+<tr>
+<td>
+        Objetivo
+       </td>
+<td>
+        Transmitir identidad, aventura y conexión con la naturaleza mediante elementos gráficos.
+       </td>
+</tr>
+<tr>
+<td>
+        Símbolo principal
+       </td>
+<td>
+        Letra G inspirada en el jaguar y letra U integrada con una palmera.
+       </td>
+</tr>
+<tr>
+<td>
+        Elementos secundarios
+       </td>
+<td>
+        Manchas del jaguar en la G; tronco y hojas de palmera en la U.
+       </td>
+</tr>
+<tr>
+<td>
+        Estilo gráfico
+       </td>
+<td>
+        Formas orgánicas y elementos gráficos vinculados a la selva.
+       </td>
+</tr>
+<tr>
+<td>
+        Significado
+       </td>
+<td>
+        Unir fauna y flora de la selva central en las letras del isologo.
+       </td>
+</tr>
+</tbody>
+</table>
+<p class="ft-callout">
+     Interpretación de los símbolos:
+    </p>
+<table class="ft-table ft-table--symbols">
+<thead>
+<tr>
+<th style="width:35%">
+        Símbolo
+       </th>
+<th>
+        Significado
+       </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+        G — Jaguar
+       <figure aria-label="Espacio para imagen: Símbolo G: jaguar" class="ft-slot ft-slot--symbol" data-image-slot="simbolo-g.png">
+<div class="ft-slot-content">
+<span aria-hidden="true" class="ft-slot-icon">
+           ▧
+          </span>
+<strong>
+           Símbolo G de jaguar
+          </strong>
+<small>Copia la imagen con el nombre indicado en la carpeta img/</small>
+</div>
+<!-- Símbolo G: colocar archivo en img/simbolo-g.png --><img alt="Símbolo G de jaguar" aria-label="Ampliar imagen: Símbolo G de jaguar" class="ft-zoomable ft-slot-image" decoding="async" loading="lazy" role="button" src="img/g.png" tabindex="0" title="Haz clic para ampliar la imagen"/>
+</figure></td>
+<td>
+<p class="ft-symbol-description">
+         La letra G representa al jaguar, símbolo de la fauna selvática, la fuerza y el espíritu de aventura.
+        </p>
+
+</td>
+</tr>
+<tr>
+<td>
+        U — Palmera
+       <figure aria-label="Espacio para imagen: Símbolo U: palmera" class="ft-slot ft-slot--symbol" data-image-slot="simbolo-u.png">
+<div class="ft-slot-content">
+<span aria-hidden="true" class="ft-slot-icon">
+           ▧
+          </span>
+<strong>
+           Símbolo U de palmera
+          </strong>
+<small>Copia la imagen con el nombre indicado en la carpeta img/</small>
+</div>
+<!-- Símbolo U: colocar archivo en img/simbolo-u.png --><img alt="Símbolo U de palmera" aria-label="Ampliar imagen: Símbolo U de palmera" class="ft-zoomable ft-slot-image" decoding="async" loading="lazy" role="button" src="img/palma.png" tabindex="0" title="Haz clic para ampliar la imagen"/>
+</figure></td>
+<td>
+<p class="ft-symbol-description">
+         La letra U incorpora la palmera y su tronco; representa la flora, la biodiversidad y la conexión con la naturaleza.
+        </p>
+
+</td>
+</tr>
+</tbody>
+</table>
+<p class="ft-callout">
+     Análisis de la marca:
+    </p>
+<p>
+     La iconología de Yaguar Tours se basa en dos elementos principales: la G, asociada al jaguar y la fauna de la selva, y la U, que integra una palmera como expresión de la flora. Ambos símbolos refuerzan el vínculo de la marca con la biodiversidad de Pangoa.
+    </p>
+<p>
+<strong>
+      Resultado esperado:
+     </strong>
+     Una identidad gráfica con símbolos reconocibles y significados relacionados con la esencia de Yaguar Tours.
+    </p>
+</section>
+<section id="imagen-verbal">
+<h2>
+     3. IMAGEN VERBAL
+    </h2>
+<div class="ft-visual ft-visual--verbal">
+<div class="ft-verbal-text">
+<b>
+       YAGUAR TOURS
+      </b>
+<span>
+       Aventura que deja huella.
+      </span>
+<small>
+       TURISMO · NATURALEZA · CULTURA
+      </small>
+</div>
+<figure aria-label="Espacio para imagen de imagen verbal" class="ft-slot ft-slot--verbal" data-image-slot="imagen-verbal.jpg">
+<div class="ft-slot-content">
+<span aria-hidden="true" class="ft-slot-icon">
+        ▧
+       </span>
+<strong>
+        Imagen verbal de Yaguar Tours
+       </strong>
+<small>Copia la imagen con el nombre indicado en la carpeta img/</small>
+</div>
+<!-- Imagen verbal: colocar archivo en img/imagen-verbal.jpg --><img alt="Infografía de imagen verbal de Yaguar Tours" aria-label="Ampliar imagen: Infografía de imagen verbal de Yaguar Tours" class="ft-zoomable ft-slot-image" decoding="async" loading="lazy" role="button" src="img/imagen-verbal.jpg" tabindex="0" title="Haz clic para ampliar la imagen"/>
+</figure>
+</div>
+<table class="ft-table">
+<thead>
+<tr>
+<th style="width:29%">
+        Ficha técnica
+       </th>
+<th>
+        Descripción
+       </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+        Definición
+       </td>
+<td>
+        Conjunto de palabras, frases, mensajes y expresiones que construyen la identidad comunicativa de una marca.
+       </td>
+</tr>
+<tr>
+<td>
+        Aplicación
+       </td>
+<td>
+        Nombre comercial, eslogan, publicidad, material promocional y publicaciones digitales.
+       </td>
+</tr>
+<tr>
+<td>
+        Objetivo
+       </td>
+<td>
+        Comunicar la personalidad y los valores de Yaguar Tours mediante palabras.
+       </td>
+</tr>
+<tr>
+<td>
+        Nombre
+       </td>
+<td>
+        YAGUAR TOURS.
+       </td>
+</tr>
+<tr>
+<td>
+        Eslogan
+       </td>
+<td>
+        «Yaguar Tours, aventura que deja huella».
+       </td>
+</tr>
+<tr>
+<td>
+        Tono comunicativo
+       </td>
+<td>
+        Cercano, aventurero, inspirador, positivo y auténtico.
+       </td>
+</tr>
+<tr>
+<td>
+        Palabras clave
+       </td>
+<td>
+        Naturaleza, aventura, Pangoa, cultura, experiencias, selva y huella.
+       </td>
+</tr>
+<tr>
+<td>
+        Tipografía propuesta
+       </td>
+<td>
+        Arial para títulos y textos informativos, de acuerdo con la identidad definida.
+       </td>
+</tr>
+<tr>
+<td>
+        Estilo verbal
+       </td>
+<td>
+        Sencillo, cercano, emotivo e inspirador.
+       </td>
+</tr>
+</tbody>
+</table>
+<p class="ft-callout">
+     Análisis de la marca:
+    </p>
+<p>
+     La imagen verbal de Yaguar Tours busca transmitir experiencias relacionadas con la naturaleza, la aventura y la cultura de Pangoa. Utiliza expresiones cercanas e inspiradoras que invitan a los visitantes a descubrir el territorio y refuerzan la identidad de la marca.
+    </p>
+<p class="ft-callout">
+     Ejemplo de mensaje publicitario:
+    </p>
+<p>
+     «Descubre la naturaleza y vive nuevas experiencias en Pangoa. Yaguar Tours, aventura que deja huella».
+    </p>
+<p>
+<strong>
+      Resultado esperado:
+     </strong>
+     Una comunicación coherente, cercana y fácil de recordar, que permita identificar la personalidad de la marca.
+    </p>
+<p class="ft-exercise">
+     EJERCICIO CONVERTIR UNA PALABRA O FRASE EN UNA IMAGEN VISUAL
+    </p>
+<figure aria-label="Espacio para imagen del ejercicio de imagen verbal" class="ft-slot ft-slot--exercise" data-image-slot="ejercicio-imagen-verbal.jpg">
+<div class="ft-slot-content">
+<span aria-hidden="true" class="ft-slot-icon">
+       ▧
+      </span>
+<strong>
+       Representación visual de la frase
+      </strong>
+<small>Copia la imagen con el nombre indicado en la carpeta img/</small>
+</div>
+<!-- Ejercicio de imagen verbal: colocar archivo en img/ejercicio-imagen-verbal.jpg --><img alt="Representación visual de la frase" aria-label="Ampliar imagen: Representación visual de la frase" class="ft-zoomable ft-slot-image" decoding="async" loading="lazy" role="button" src="img/Frase, concepto e imagen de aventura tropical.png" tabindex="0" title="Haz clic para ampliar la imagen"/>
+</figure>
+</section>
+<section id="cuadro-comparativo">
+<h2>
+     4. CUADRO COMPARATIVO GENERAL
+    </h2>
+<table class="ft-table ft-table--symbols">
+<thead>
+<tr>
+<th style="width:35%">
+        Concepto
+       </th>
+<th>
+        Función en Yaguar Tours
+       </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+        Imagología
+       </td>
+<td>
+        Construye la percepción e imagen de la marca.
+       </td>
+</tr>
+<tr>
+<td>
+        Iconología
+       </td>
+<td>
+        Da significado a los símbolos y elementos gráficos relacionados con la naturaleza.
+       </td>
+</tr>
+<tr>
+<td>
+        Imagen verbal
+       </td>
+<td>
+        Comunica la personalidad mediante palabras y mensajes.
+       </td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="conclusion">
+<h2>
+     5. CONCLUSIÓN
+    </h2>
+<p>
+     Yaguar Tours integra la imagología, iconología e imagen verbal para desarrollar una identidad corporativa coherente. La imagología permite proyectar una imagen natural y aventurera; la iconología aporta significado mediante símbolos inspirados en el yaguar y la biodiversidad; y la imagen verbal transmite los valores de la marca mediante su nombre, eslogan y mensajes publicitarios.
+    </p>
+<p>
+     De esta manera, Yaguar Tours busca representar la unión entre el turismo, la naturaleza y la cultura de Pangoa, creando una identidad visual y comunicativa propia.
+    </p>
+<p class="ft-note">
+     Ficha elaborada para un proyecto académico de marca conceptual.
+    </p>
+</section>
+</main>
+<footer style="padding:26px;text-align:center;background:#004d2e;color:white">
+   YAGUAR TOURS · Turismo · Naturaleza · Aventura
+  </footer>
+<figure aria-label="Visualización ampliada de imagen" aria-modal="true" class="ft-lightbox" hidden="" id="ft-lightbox" role="dialog">
+<button aria-label="Cerrar imagen ampliada" class="ft-lightbox-close" type="button">
+    ✕ Cerrar
+   </button>
+<img alt="Imagen ampliada"/>
+<figcaption>
+</figcaption>
+</figure>
+<script>
+   // Vista ampliada de imágenes y estado de los cuadros editables.
+(() => {
+    const modal = document.getElementById('ft-lightbox');
+    const expandedImage = modal.querySelector('img');
+    const caption = modal.querySelector('figcaption');
+    const closeButton = modal.querySelector('.ft-lightbox-close');
+    let lastFocusedImage = null;
+
+    function openImage(image) {
+        if (!image.complete || image.naturalWidth === 0) return;
+
+        lastFocusedImage = image;
+        expandedImage.src = image.currentSrc || image.src;
+        expandedImage.alt = image.alt || 'Imagen de Yaguar Tours';
+        caption.textContent = image.alt || '';
+        modal.hidden = false;
+        document.body.style.overflow = 'hidden';
+        closeButton.focus();
+    }
+
+    function closeImage() {
+        if (modal.hidden) return;
+
+        modal.hidden = true;
+        expandedImage.removeAttribute('src');
+        document.body.style.overflow = '';
+        if (lastFocusedImage) {
+            lastFocusedImage.focus();
+            lastFocusedImage = null;
+        }
+    }
+
+    // Cada cuadro muestra un marcador hasta que exista su imagen en img/.
+    document.querySelectorAll('.ft-slot[data-image-slot]').forEach((slot) => {
+        const image = slot.querySelector('img.ft-slot-image');
+        if (!image) return;
+
+        const updateSlot = () => {
+            slot.classList.toggle('ft-has-image', image.complete && image.naturalWidth > 0);
+        };
+        image.addEventListener('load', updateSlot);
+        image.addEventListener('error', updateSlot);
+        if (image.complete) updateSlot();
+    });
+
+    document.querySelectorAll('.ft-paper img.ft-zoomable').forEach((image) => {
+        image.addEventListener('click', () => openImage(image));
+        image.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openImage(image);
+            }
+        });
+    });
+
+    closeButton.addEventListener('click', closeImage);
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) closeImage();
+    });
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !modal.hidden) closeImage();
+        if (event.key === 'Tab' && !modal.hidden) {
+            event.preventDefault();
+            closeButton.focus();
+        }
+    });
+})();
+  </script>
+</body>
+</html>

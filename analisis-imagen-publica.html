@@ -1,0 +1,3321 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Análisis de imagen pública de Yaguar Tours: percepción, observación directa, redes sociales, análisis de sentimientos y encuesta de valoración." name="description"/>
+<title>
+   Análisis de Imagen Pública | YAGUAR TOURS
+  </title>
+<link href="css/yaguar.css" rel="stylesheet"/>
+<style>
+   .publica-page{background:#f5faf6;color:#1a3829;font-family:Arial,sans-serif}.publica-page *{box-sizing:border-box}.publica-page .container{max-width:1180px;margin:auto;padding-inline:22px}.publica-hero{padding:90px 0 82px;color:white;background:linear-gradient(115deg,rgba(0,46,27,.96),rgba(0,122,65,.88)),url('https://drive.google.com/thumbnail?id=1vNsQaMY4gVJIre1pxDY-DYnOiONN8HUU&sz=w1600') center/cover}.publica-hero h1{color:white;font-size:clamp(34px,5vw,64px);line-height:1.12;max-width:900px;letter-spacing:-.035em;margin:16px 0}.publica-hero p{max-width:740px;color:#e7f4eb;font-size:17px;line-height:1.75}.publica-kicker{display:inline-block;color:#f5a247;letter-spacing:.13em;font-size:12px;font-weight:800;text-transform:uppercase}.publica-pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.publica-pills span{border:1px solid #ffffff75;padding:8px 14px;border-radius:99px;font-size:13px}.publica-section{padding:66px 0}.publica-section.alt{background:white}.publica-section h2{font-size:clamp(25px,3vw,38px);color:#004d2e;margin:12px 0 16px}.publica-intro{max-width:830px;line-height:1.8;color:#547064}.publica-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}.publica-card{background:#fff;border:1px solid #dcece1;border-radius:18px;padding:26px;box-shadow:0 7px 24px #004d2e0a}.publica-card h3{color:#004d2e;font-size:19px;margin:12px 0}.publica-card p,.publica-card li{color:#526a5e;line-height:1.7;font-size:14px}.publica-num{font-weight:bold;color:#e28d32;font-size:14px}.publica-section.alt .publica-card{background:#f7fbf8}.publica-two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}.publica-panel{background:#eaf4ee;padding:26px;border-radius:18px}.publica-panel h3{color:#004d2e}.publica-panel p,.publica-panel li{line-height:1.7;color:#476253}.publica-tablewrap{overflow-x:auto;margin-top:26px;border:1px solid #d7e9dd;border-radius:16px}.publica-table{border-collapse:collapse;width:100%;min-width:670px;background:#fff}.publica-table th{background:#004d2e;color:white;text-align:left}.publica-table th,.publica-table td{padding:16px;border-bottom:1px solid #deebe2;vertical-align:top;font-size:14px}.publica-question{display:flex;gap:14px;padding:18px 0;border-bottom:1px solid #dce9df}.publica-question b{color:#007a41}.publica-note{font-size:14px;color:#5a6e61;margin-top:22px;line-height:1.75}.publica-cta{background:#004d2e;color:white;border-radius:22px;padding:30px;margin-top:30px}.publica-cta h3{color:white;margin:0 0 8px}.publica-cta p{color:#e4f3e9}.publica-cta a{color:#fbc078;font-weight:bold}.publica-image{width:100%;height:260px;object-fit:cover;border-radius:18px}.publica-section ul{padding-left:20px}@media(max-width:850px){.publica-grid{grid-template-columns:1fr 1fr}.publica-two{grid-template-columns:1fr}}@media(max-width:590px){.publica-grid{grid-template-columns:1fr}.publica-hero{padding:62px 0}.publica-section{padding:45px 0}}
+
+/* Gráficos circulares y de barras: cinco preguntas, datos reales del formulario */
+.publica-page .survey-question{padding:clamp(18px,2.8vw,32px);margin:22px 0;border-radius:20px;box-shadow:0 7px 25px #004d2e08}
+.publica-page .question-results{border-top:1px solid #dfebe3;margin-top:24px;padding-top:22px}
+.publica-page .results-heading{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
+.publica-page .results-eyebrow{font-size:12px;font-weight:800;letter-spacing:.045em;color:#006f3c}
+.publica-page .results-small{font-size:12px;color:#62796b}
+.publica-page .dual-charts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px;align-items:stretch}
+.publica-page .plot-panel{margin:0;background:#f8fbf9;border:1px solid #dbeadf;border-radius:16px;padding:20px;min-width:0}
+.publica-page .plot-panel figcaption{font-size:14px;font-weight:800;color:#184a34;margin-bottom:20px}
+.publica-page .pie-layout{display:flex;align-items:center;gap:19px;flex-wrap:wrap}
+.publica-page .pie-chart{width:190px;height:190px;flex:0 0 190px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 20px #004d2e19}
+.publica-page .pie-hole{width:102px;height:102px;border-radius:50%;background:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;box-shadow:0 0 0 1px #ffffffb0}
+.publica-page .pie-hole strong{font-size:32px;line-height:1;color:#004d2e}.publica-page .pie-hole small{font-size:11px;color:#678171;margin-top:8px}
+.publica-page .pie-legend{list-style:none;margin:0;padding:0;flex:1 1 190px;min-width:0}
+.publica-page .pie-legend li{display:flex;align-items:center;gap:8px;font-size:12px;color:#3d5948;margin-bottom:12px;line-height:1.5}
+.publica-page .pie-dot{width:11px;height:11px;flex:0 0 11px;border-radius:50%}
+.publica-page .pie-name{flex:1;overflow-wrap:anywhere}.publica-page .pie-legend strong{white-space:nowrap;color:#153e2c;font-size:11px}
+.publica-page .bar-chart{display:flex;flex-direction:column;gap:17px;margin-top:8px}
+.publica-page .bar-line{display:grid;grid-template-columns:minmax(110px,1.15fr) minmax(100px,1.4fr) 86px;align-items:center;gap:10px;font-size:12px}
+.publica-page .bar-name{line-height:1.4;color:#3b594a;overflow-wrap:anywhere}.publica-page .bar-rail{height:17px;background:#e3ede6;overflow:hidden;border-radius:6px}
+.publica-page .bar-amount{height:100%;border-radius:6px;transition:width .4s ease}.publica-page .bar-line strong{text-align:right;color:#19422f;font-size:11px;font-variant-numeric:tabular-nums}
+.publica-page .bar-axis{display:flex;justify-content:space-between;padding:11px 85px 0 38%;color:#718776;font-size:10px}
+.publica-page .survey-findings{background:#eef7f0;border-left:4px solid #007a41;border-radius:0 14px 14px 0;margin-top:24px;padding:19px 22px}
+.publica-page .survey-findings h4{margin:0 0 10px;color:#004d2e;font-size:18px}.publica-page .survey-findings p{margin:0;line-height:1.85;color:#385b46;font-size:14px}
+@media(max-width:950px){.publica-page .dual-charts{grid-template-columns:1fr}}
+@media(max-width:530px){.publica-page .plot-panel{padding:14px}.publica-page .pie-layout{justify-content:center}.publica-page .pie-chart{width:170px;height:170px;flex-basis:170px}.publica-page .bar-line{grid-template-columns:minmax(85px,1fr) minmax(75px,1fr) 75px;gap:6px;font-size:11px}.publica-page .bar-axis{padding-right:75px;padding-left:38%}}
+
+/* Separación editorial: barras en 4.1; gráficos circulares en 4.1.1 */
+.publica-page .bar-only{display:block}.publica-page .bar-only .plot-panel{width:100%}
+.publica-page .pie-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:24px 0 30px}
+.publica-page .pie-result-card{background:#fff;border:1px solid #d9e9de;border-radius:18px;padding:20px;min-width:0}
+.publica-page .pie-result-card h4{color:#004d2e;line-height:1.5;font-size:16px;margin:0 0 15px}
+.publica-page .pie-result-card .plot-panel{height:calc(100% - 50px)}
+@media(max-width:900px){.publica-page .pie-results{grid-template-columns:1fr}}
+
+/* Capítulo 5: estadísticas circulares y organización de apartados */
+.cap5-block{margin-top:32px;padding-top:12px;scroll-margin-top:95px}
+.cap5-block>h3{font-size:clamp(20px,2.4vw,28px);color:#004d2e;margin:12px 0 18px}
+.cap5-block .publica-card h4{color:#004d2e;font-size:17px;margin:8px 0}
+.cap5-block .pie-results{margin-top:20px}
+.chapter5-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:23px 0}
+.chapter5-summary>div{display:flex;flex-direction:column;gap:6px;background:#eaf4ee;border:1px solid #d4e9dc;border-radius:15px;padding:20px}
+.chapter5-summary strong{font-size:30px;color:#005936}
+.chapter5-summary span{font-size:13px;color:#486451}
+@media(max-width:650px){.chapter5-summary{grid-template-columns:1fr}}
+
+/* Gráficos interactivos: inspección, selección y resaltado sincronizado */
+.publica-page .bar-line,.publica-page .pie-legend li{cursor:pointer;transition:opacity .2s ease,background .2s ease,transform .2s ease;border-radius:8px}
+.publica-page .bar-line:hover,.publica-page .pie-legend li:hover,.publica-page .bar-line.is-highlighted,.publica-page .pie-legend li.is-highlighted{background:#e2f3e7;transform:translateX(3px)}
+.publica-page .bar-line.is-muted,.publica-page .pie-legend li.is-muted{opacity:.38}
+.publica-page .bar-line:focus-visible,.publica-page .pie-legend li:focus-visible,.publica-page .pie-chart:focus-visible{outline:3px solid #f5a247;outline-offset:3px}
+.publica-page .bar-rail{height:19px}.publica-page .bar-amount{transition:width .4s ease,filter .2s}.publica-page .bar-line.is-highlighted .bar-amount{filter:brightness(1.12)}
+.publica-page .pie-chart{cursor:crosshair;transition:transform .2s ease,box-shadow .2s ease}
+.publica-page .pie-chart:hover,.publica-page .pie-chart.is-active{transform:scale(1.045);box-shadow:0 10px 30px #004d2e28}
+.publica-page .chart-interaction-status{min-height:44px;margin:12px 0 0;padding:10px 13px;border-radius:10px;border:1px solid #d7e8dc;background:#f5faf6;font-size:13px;line-height:1.6;color:#315c43}
+.publica-page .chart-interaction-status strong{color:#005c36}
+.publica-page .chart-hint{font-size:12px;color:#5a7867;margin:8px 0}
+@media(max-width:600px){.publica-page .survey-evidence{padding:14px}.publica-page .evidence-controls{justify-content:center}}
+
+.publica-page .response-figure{background:#fff;border:1px solid #dce7e0;border-radius:18px;padding:20px 18px 16px;margin-top:18px;overflow-x:auto}
+.publica-page .response-svg{width:100%;height:auto;display:block;min-width:760px}
+.publica-page .response-note{font-size:12px;color:#607968;line-height:1.6;margin-top:10px}
+  </style>
+<style>
+   .publica-page .report-nav{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 0}.publica-page .report-nav a{color:#064d2e;background:#e1f2e7;padding:9px 13px;border-radius:9px;text-decoration:none;font-weight:700;font-size:12px}.publica-page .report-nav a:hover{background:#c9e8d2}.publica-page .section-lead{font-size:16px;line-height:1.85;max-width:920px;color:#4b6558}.publica-page .info-strip{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}.publica-page .info-strip span{background:#eaf4ee;color:#064d2e;padding:12px 18px;border-radius:12px;font-size:13px}.publica-page .report-tablewrap{overflow-x:auto;border:1px solid #d7e7dd;border-radius:14px;margin-top:24px}.publica-page .report-table{border-collapse:collapse;width:100%;min-width:690px;background:white}.publica-page .report-table th{background:#075737;color:white;text-align:left}.publica-page .report-table td,.publica-page .report-table th{padding:15px;border-bottom:1px solid #dde8df;font-size:14px;line-height:1.65;vertical-align:top}.publica-page .report-table tr:nth-child(even) td{background:#f4f9f5}.publica-page .survey-question{background:#fff;border:1px solid #d9e9de;border-radius:16px;padding:22px;margin:12px 0}.publica-page .survey-question h3{font-size:17px;color:#004d2e;margin:0 0 12px}.publica-page .survey-options{display:flex;flex-wrap:wrap;gap:9px}.publica-page .survey-options span{padding:7px 11px;background:#eaf4ee;border-radius:50px;color:#315947;font-size:13px}.publica-page .foda-matrix{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:25px}.publica-page .foda-box{padding:25px;border-radius:16px;background:white;border:1px solid #dce7e0}.publica-page .foda-box h3{font-size:20px;color:#075c3c;margin:0 0 15px}.publica-page .foda-box li{line-height:1.7;margin-bottom:8px;color:#435c4d}.publica-page .foda-box:nth-child(2){border-top:5px solid #16864f}.publica-page .foda-box:nth-child(3){border-top:5px solid #f5a247}.publica-page .foda-box:nth-child(4){border-top:5px solid #715043}.publica-page .chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:22px}.publica-page .chart-card{padding:22px;background:#fff;border-radius:18px;border:1px solid #dceadf;min-width:0}.publica-page .chart-card h3{margin:0 0 16px;color:#004d2e;font-size:18px}.publica-page .chart-row{display:grid;grid-template-columns:minmax(135px,1fr) minmax(120px,1.6fr) 70px;align-items:center;gap:9px;margin:11px 0;font-size:12px;color:#355344}.publica-page .chart-track{height:14px;background:#e5efe8;border-radius:20px;overflow:hidden}.publica-page .chart-fill{height:100%;background:linear-gradient(90deg,#007a41,#57ad70);border-radius:20px;min-width:0}.publica-page .chart-number{font-weight:700;text-align:right;font-variant-numeric:tabular-nums}.publica-page .survey-import{background:#eaf4ee;border:1px solid #b6d6c0;border-radius:18px;padding:25px;margin-top:24px}.publica-page .survey-import label{display:block;font-weight:700;color:#004d2e;margin-bottom:10px}.publica-page .survey-import input{max-width:100%;font-size:14px}.publica-page .survey-import button{border:0;border-radius:9px;padding:12px 16px;margin-top:12px;background:#004d2e;color:white;cursor:pointer}.publica-page .survey-status{padding:10px 0;color:#486456;font-size:14px}.publica-page .summary-stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}.publica-page .summary-stat{background:white;padding:18px;border-radius:14px;border:1px solid #dce7e0;flex:1;min-width:180px}.publica-page .summary-stat strong{display:block;font-size:28px;color:#075737}.publica-page .summary-stat small{color:#4b6558}.publica-page .doc-notice{border-left:4px solid #f5a247;background:#fffaf2;padding:17px 20px;border-radius:0 12px 12px 0;color:#684b2c;line-height:1.7;margin-top:22px}.publica-page .bibliography{line-height:1.9;color:#456354}.publica-page .references{padding-left:20px}.publica-page .references li{margin-bottom:12px}.publica-page .doc-source{font-size:12px;color:#607968}.publica-page .report-table .planned{font-style:italic;color:#65796a}@media(max-width:780px){.publica-page .chart-grid,.publica-page .foda-matrix{grid-template-columns:1fr}.publica-page .chart-row{grid-template-columns:1fr 1fr 65px}.publica-page .report-nav{gap:6px}}
+  </style>
+<style>
+   /* Cuadros originales de las secciones 5.3 y 5.4 del informe */
+.publica-page .word-original-table{min-width:650px;table-layout:auto;}
+.publica-page .word-original-table td:first-child{font-weight:700;}
+.publica-page .word-original-table tbody tr:nth-child(even){background:#f2efe9;}
+.publica-page .original-word-figure{max-width:760px;margin:28px auto 18px;text-align:center;}
+.publica-page .original-word-chart{display:block;width:100%;height:auto;object-fit:contain;background:#fff;border:0;}
+.publica-page .original-word-figure figcaption{font-family:Georgia,serif;font-style:italic;font-size:13px;color:#43584c;margin-top:9px;line-height:1.5;}
+.publica-page .original-source-note{font-size:12px;color:#667a70;line-height:1.6;margin:15px 0 0;}
+  </style>
+<style>
+   /* Gráfico 5.3: puntuaciones por plataforma */
+.publica-page .rep-score-figure{max-width:830px;margin:28px auto 18px;padding:28px;background:#fff;border:1px solid #d9e7de;border-radius:18px;box-shadow:0 8px 22px rgba(0,77,46,.05)}
+.publica-page .rep-score-figure h4{margin:0;color:#004d2e;text-align:center;font-size:21px}
+.publica-page .rep-score-subtitle{text-align:center;color:#567264;font-size:13px;margin:8px 0 26px}
+.publica-page .rep-score-chart{display:grid;gap:18px}
+.publica-page .rep-score-row{display:grid;grid-template-columns:165px minmax(0,1fr) 80px;gap:14px;align-items:center;border-radius:9px;padding:7px;outline-offset:2px;transition:background .15s}
+.publica-page .rep-score-row:hover,.publica-page .rep-score-row:focus-visible{background:#eaf4ee;outline-color:#007a41}
+.publica-page .rep-score-name{color:#204e36;font-size:14px;font-weight:700}
+.publica-page .rep-score-track{height:24px;background:repeating-linear-gradient(90deg,#edf3ee 0,#edf3ee calc(20% - 1px),#ccdcd0 calc(20% - 1px),#ccdcd0 20%);border-radius:7px;overflow:hidden}
+.publica-page .rep-score-fill{height:100%;background:linear-gradient(90deg,#007a41,#55aa6f);border-radius:7px;transition:filter .2s,transform .2s;transform-origin:left}
+.publica-page .rep-score-row:hover .rep-score-fill,.publica-page .rep-score-row:focus-visible .rep-score-fill{filter:brightness(1.16)}
+.publica-page .rep-score-value{font-size:14px;color:#004d2e;text-align:right;font-variant-numeric:tabular-nums}
+.publica-page .rep-score-axis{display:flex;justify-content:space-between;margin-left:186px;margin-right:86px;font-size:12px;color:#65796a}
+.publica-page .rep-score-figure figcaption{font-family:Georgia,serif;font-style:italic;color:#4d6656;text-align:center;font-size:12px;margin-top:24px}
+@media(max-width:620px){.publica-page .rep-score-figure{padding:16px}.publica-page .rep-score-row{grid-template-columns:1fr 64px;gap:7px}.publica-page .rep-score-name{grid-column:1/-1}.publica-page .rep-score-axis{margin-left:7px;margin-right:72px}}
+  </style>
+<style>
+   /* 5.2: evidencias primero; tabla comparativa y gráfico circular por pregunta */
+.publica-page #capitulo-5-2 .survey-evidence{margin:28px 0 36px}
+.publica-page #capitulo-5-2 .survey-report-list{display:flex;flex-direction:column;gap:26px;margin:28px 0}
+.publica-page #capitulo-5-2 .survey-report-question{padding:clamp(20px,3vw,32px);border:1px solid #d9e9de;background:#fff;border-radius:18px;box-shadow:0 5px 18px #004d2e0c}
+.publica-page #capitulo-5-2 .survey-report-question h4{font-size:clamp(17px,2vw,21px);margin:0 0 18px;color:#004d2e;line-height:1.5}
+.publica-page #capitulo-5-2 .survey-comparison-wrap{overflow-x:auto;margin-bottom:22px}
+.publica-page #capitulo-5-2 .survey-comparison-table{width:100%;border-collapse:collapse;min-width:470px;font-size:14px;color:#2d4436}
+.publica-page #capitulo-5-2 .survey-comparison-table th{background:#087445;color:#fff;text-align:left}
+.publica-page #capitulo-5-2 .survey-comparison-table th,.publica-page #capitulo-5-2 .survey-comparison-table td{border:1px solid #d7e6db;padding:11px 13px}
+.publica-page #capitulo-5-2 .survey-comparison-table th:nth-child(n+2),.publica-page #capitulo-5-2 .survey-comparison-table td:nth-child(n+2){text-align:center;width:120px}
+.publica-page #capitulo-5-2 .survey-comparison-table tbody tr:nth-child(even){background:#f3f9f5}
+.publica-page #capitulo-5-2 .survey-comparison-table tfoot{font-weight:800;background:#eaf4ee}
+.publica-page #capitulo-5-2 .survey-report-question .plot-panel{padding:22px;background:#fafcfb}
+.publica-page #capitulo-5-2 .pie-layout{justify-content:center;gap:35px}
+.publica-page #capitulo-5-2 .pie-chart{width:230px;height:230px;flex:0 0 230px}
+.publica-page #capitulo-5-2 .pie-legend{max-width:425px;flex-basis:260px}
+.publica-page #capitulo-5-2 .pie-legend li{font-size:13px}
+.publica-page #capitulo-5-2 .survey-chart-source{color:#597463;font-size:12px;margin:10px 0 0}
+@media(max-width:590px){.publica-page #capitulo-5-2 .pie-chart{width:195px;height:195px;flex-basis:195px}.publica-page #capitulo-5-2 .survey-report-question{padding:16px}}
+  </style>
+<style>
+   /* =============================================================
+   5.2 · Galería de evidencias: 12 tarjetas y visor ampliado
+   ============================================================= */
+.publica-page .survey-evidence {
+  margin: 32px 0 40px;
+  padding: clamp(18px, 3vw, 34px);
+  background: linear-gradient(145deg, #f5fbf6 0%, #e9f3ec 100%);
+  border: 1px solid #d5e7da;
+  border-radius: 24px;
+  box-shadow: 0 12px 32px rgba(0, 77, 46, .07);
+}
+.publica-page .evidence-header {display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:25px}
+.publica-page .evidence-header h3 {font-size:clamp(23px, 3vw, 30px);margin:8px 0 10px;color:#004d2e}
+.publica-page .evidence-eyebrow {color:#087a47;font-size:11px;font-weight:800;letter-spacing:.12em}
+.publica-page .evidence-lead {color:#557162;font-size:14px;line-height:1.75;max-width:690px;margin:0}
+.publica-page .evidence-total {background:#fff;color:#00613a;border:1px solid #d5e7da;border-radius:100px;padding:11px 16px;font-size:13px;font-weight:800;white-space:nowrap}
+.publica-page .evidence-gallery {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}
+.publica-page .evidence-card {display:block;width:100%;padding:0;text-align:left;background:#fff;border:1px solid #d8e8dc;border-radius:17px;overflow:hidden;box-shadow:0 4px 16px rgba(6,74,44,.06);cursor:pointer;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;color:#004d2e;font:inherit}
+.publica-page .evidence-card:hover {transform:translateY(-5px);box-shadow:0 16px 30px rgba(0,77,46,.14);border-color:#80bd94}
+.publica-page .evidence-card:focus-visible {outline:3px solid #f5a247;outline-offset:4px}
+.publica-page .evidence-photo {position:relative;display:grid;place-items:center;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(145deg,#e1f0e7,#f5faf6)}
+.publica-page .evidence-photo img {width:100%;height:100%;object-fit:contain;display:block;position:relative;z-index:2;transition:transform .35s ease;background:#edf5ef}
+.publica-page .evidence-card:hover .evidence-photo img {transform:scale(1.045)}
+.publica-page .evidence-photo img.is-missing {display:none}
+.publica-page .evidence-empty {display:none;position:absolute;inset:0;align-items:center;justify-content:center;flex-direction:column;gap:7px;text-align:center;padding:12px;color:#6e8c78}
+.publica-page .image-unavailable .evidence-empty {display:flex}
+.publica-page .evidence-empty-icon {font-size:29px;opacity:.75}
+.publica-page .evidence-empty strong {color:#37654b;font-size:13px}
+.publica-page .evidence-empty small {font-size:10px;overflow-wrap:anywhere}
+.publica-page .evidence-zoom {position:absolute;right:11px;bottom:11px;z-index:3;width:34px;height:34px;display:grid;place-items:center;background:rgba(0,59,35,.85);color:white;border-radius:10px;font-size:21px;transition:transform .2s}
+.publica-page .evidence-card:hover .evidence-zoom {transform:scale(1.09)}
+.publica-page .evidence-card-body {padding:14px 15px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.publica-page .evidence-label {font-size:12px;font-weight:800;letter-spacing:.06em}
+.publica-page .evidence-card-arrow {color:#5e9572;font-size:19px}
+.publica-page .evidence-footnote {margin:23px 0 0;font-size:12px;line-height:1.7;color:#62796b}
+.publica-page .evidence-footnote code {font-size:12px}
+/* Visor ampliado accesible */
+.evidence-lightbox[hidden] {display:none!important}
+.evidence-lightbox {position:fixed;inset:0;z-index:99999;background:rgba(3,22,14,.89);display:flex;align-items:center;justify-content:center;padding:clamp(12px,3vw,36px);backdrop-filter:blur(10px)}
+.evidence-lightbox-panel {width:min(1120px,100%);height:min(850px,94dvh);min-height:350px;display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.18);border-radius:20px;overflow:hidden;background:#112a1d;box-shadow:0 26px 70px rgba(0,0,0,.42);color:white}
+.evidence-lightbox-header,.evidence-lightbox-footer {display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 22px}
+.evidence-lightbox-header>div {display:flex;flex-direction:column;gap:5px}
+.evidence-lightbox-kicker {font-size:10px;letter-spacing:.11em;color:#a6d0b5;font-weight:700}
+.evidence-lightbox-header strong {font-size:18px}
+.evidence-lightbox button {border:1px solid rgba(255,255,255,.18);border-radius:12px;background:rgba(255,255,255,.11);color:#fff;cursor:pointer;transition:background .15s}
+.evidence-lightbox button:hover {background:rgba(255,255,255,.25)}
+.evidence-lightbox button:focus-visible {outline:3px solid #f5a247;outline-offset:3px}
+.evidence-lightbox-close {width:42px;height:42px;font-size:19px}
+.evidence-lightbox-stage {display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:0;flex:1;padding:10px 15px;background:#06160d}
+.evidence-lightbox-stage img {display:block;min-width:0;max-width:calc(100% - 112px);width:auto;height:auto;max-height:100%;object-fit:contain;margin:auto;border-radius:5px}
+.evidence-lightbox-nav {flex:0 0 46px;width:46px;height:52px;font-size:36px;line-height:1}
+.evidence-lightbox-missing {flex:1;text-align:center;color:#c8d9cc;font-size:15px;padding:20px}
+.evidence-lightbox-footer {color:#bdd6c6;font-size:12px;flex-wrap:wrap}
+.evidence-lightbox-footer #evidenceCounter {color:#fff;font-weight:800}
+body.evidence-modal-open {overflow:hidden}
+@media(max-width:950px) {.publica-page .evidence-gallery {grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:660px) {.publica-page .evidence-gallery {grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.publica-page .evidence-card-body {padding:12px}.publica-page .evidence-label {font-size:10px}.evidence-lightbox-stage {gap:5px;padding:8px}.evidence-lightbox-nav {flex-basis:34px;width:34px;height:45px;font-size:29px}.evidence-lightbox-stage img {max-width:calc(100% - 78px)}.evidence-lightbox-footer {font-size:11px}}
+@media(max-width:390px) {.publica-page .survey-evidence {padding:12px}.publica-page .evidence-gallery {gap:9px}.publica-page .evidence-empty small {font-size:9px}}
+@media(prefers-reduced-motion:reduce) {.publica-page .evidence-card,.publica-page .evidence-photo img,.publica-page .evidence-zoom {transition:none}}
+  </style>
+</head>
+<body>
+<div class="topbar">
+<div class="container">
+<span>
+     YAGUAR TOURS · Turismo · Naturaleza · Aventura
+    </span>
+<span>
+     Pangoa · Junín · Perú
+    </span>
+</div>
+</div>
+<header class="navbar">
+<div class="container nav-inner">
+<a class="brand" href="index.html">
+<img onerror="this.onerror=null;this.src='img/logo.jpg'" alt="Isologo Yaguar Tours" src="img/logo-yaguar.png"/>
+<span>
+<strong>
+       YAGUAR TOURS
+      </strong>
+<small>
+       Turismo · Naturaleza · Aventura
+      </small>
+</span>
+</a>
+<nav class="nav-links">
+<a href="index.html">
+      INICIO
+     </a>
+<a href="identidad-corporativa.html">
+      IDENTIDAD CORPORATIVA
+     </a>
+<a href="identidad-visual.html">
+      IDENTIDAD VISUAL
+     </a>
+<a href="imagen-institucional.html">
+      IMAGEN INSTITUCIONAL
+     </a>
+<a href="aplicaciones.html">
+      APLICACIONES
+     </a>
+<a href="comunicacion.html">
+      COMUNICACIÓN
+     </a>
+<a href="manual-identidad.html">
+      MANUAL
+     </a>
+<a href="propuestas-mejora.html">
+      MEJORAS
+     </a>
+<a href="plan-comunicacion.html">
+      PLAN DE COMUNICACIÓN
+     </a>
+<a href="auditoria-imagen.html">
+      AUDITORÍA DE LA IMAGEN
+     </a>
+<a aria-current="page" class="active" href="analisis-imagen-publica.html">
+      ANÁLISIS DE IMAGEN PÚBLICA DE LA EMPRESA YAGUAR TOURS
+     </a>
+<a href="ficha-tecnica.html">FICHA TÉCNICA</a></nav>
+</div>
+</header>
+<main class="publica-page">
+<section class="publica-hero">
+<div class="container">
+<span class="publica-kicker">
+      SENATI · Informe académico · 4 de noviembre de 2026
+     </span>
+<h1>
+      ANÁLISIS DE IMAGEN PÚBLICA DE LA EMPRESA YAGUAR TOURS
+     </h1>
+<p>
+      Informe estratégico de posicionamiento, reputación y experiencia del cliente. Análisis de la propuesta turística de Pangoa, Junín.
+     </p>
+<div class="publica-pills">
+<span>
+       Identidad corporativa
+      </span>
+<span>
+       Encuesta virtual
+      </span>
+<span>
+       Reputación digital
+      </span>
+<span>
+       FODA
+      </span>
+<span>
+       Plan de acción
+      </span>
+</div>
+<div class="info-strip">
+<span>
+<strong>
+        Autor:
+       </strong>
+       Said Napoleon Chimanga Shumpate
+      </span>
+<span>
+<strong>
+        Docente:
+       </strong>
+       Luis A. Utos Ceras
+      </span>
+<span>
+<strong>
+        Institución:
+       </strong>
+       SENATI
+      </span>
+</div>
+</div>
+</section>
+<section class="publica-section alt" id="resumen">
+<div class="container">
+<span class="publica-kicker">
+      Resumen ejecutivo
+     </span>
+<h2>
+      Evaluación integral de la imagen pública
+     </h2>
+<p class="section-lead">
+      Este informe analiza la identidad visual y corporativa de Yaguar Tours, propuesta de agencia turística de Pangoa, e identifica criterios para evaluar su posicionamiento y confianza. Combina un instrumento de encuesta virtual, revisión de aplicaciones gráficas, análisis de sentimientos y una matriz FODA para formular un plan de acción medible.
+     </p>
+<div class="doc-notice">
+<strong>
+       Alcance de los datos:
+      </strong>
+      Las estadísticas se basan en 15 respuestas registradas en el CSV actualizado. Los resultados corresponden a opiniones de potenciales clientes, no a experiencias verificadas con Yaguar Tours.
+     </div>
+<div class="report-nav">
+<a href="#introduccion">
+       1. Introducción
+      </a>
+<a href="#objetivos">
+       2. Objetivos
+      </a>
+<a href="#marco">
+       3. Marco teórico
+      </a>
+<a href="#metodologia">
+       4. Metodología
+      </a>
+<a href="#analisis">
+       5. Análisis
+      </a>
+<a href="#foda">
+       6. Matriz FODA
+      </a>
+<a href="#plan">
+       7. Plan de acción
+      </a>
+<a href="#conclusiones">
+       8. Conclusiones
+      </a>
+<a href="#referencias">
+       9. Referencias
+      </a>
+</div>
+</div>
+</section>
+<section class="publica-section" id="introduccion">
+<div class="container">
+<span class="publica-kicker">
+      Capítulo 01
+     </span>
+<h2>
+      1. Introducción
+     </h2>
+<p class="section-lead">
+      La imagen pública es la percepción que las personas construyen sobre una organización a partir de su identidad visual, sus mensajes y las experiencias que asocian con sus servicios. En turismo, una imagen clara puede comunicar seguridad, confianza, cercanía y atractivo de los destinos.
+     </p>
+<p class="section-lead">
+      Yaguar Tours es una propuesta de agencia de viajes en Pangoa, Junín, orientada a estudiantes, trabajadores, familias y turistas interesados en experiencias de naturaleza, cultura y aventura. El estudio examina la coherencia de su identidad y propone cómo medir la opinión de potenciales clientes.
+     </p>
+<div class="publica-grid">
+<article class="publica-card">
+<span class="publica-num">
+        01
+       </span>
+<h3>
+        Ubicación
+       </h3>
+<p>
+        Pangoa · Selva Central · Junín, Perú.
+       </p>
+</article>
+<article class="publica-card">
+<span class="publica-num">
+        02
+       </span>
+<h3>
+        Sector
+       </h3>
+<p>
+        Turismo, naturaleza, aventura y experiencias culturales.
+       </p>
+</article>
+<article class="publica-card">
+<span class="publica-num">
+        03
+       </span>
+<h3>
+        Propósito
+       </h3>
+<p>
+        Conocer qué imagen proyecta la marca y cómo fortalecerla.
+       </p>
+</article>
+</div>
+</div>
+</section>
+<section class="publica-section alt" id="objetivos">
+<div class="container">
+<span class="publica-kicker">
+      Capítulo 02
+     </span>
+<h2>
+      2. Objetivos del estudio
+     </h2>
+<div class="publica-panel">
+<h3>
+       2.1 Objetivo general
+      </h3>
+<p>
+       Analizar la identidad corporativa y la imagen pública proyectada de Yaguar Tours para identificar oportunidades de mejora y definir indicadores que permitan evaluar la percepción de sus potenciales clientes.
+      </p>
+</div>
+<h3 style="margin-top:28px;color:#004d2e">
+      2.2 Objetivos específicos
+     </h3>
+<div class="publica-grid">
+<article class="publica-card">
+<b>
+        01
+       </b>
+<p>
+        Describir misión, visión, valores y personalidad de la propuesta.
+       </p>
+</article>
+<article class="publica-card">
+<b>
+        02
+       </b>
+<p>
+        Examinar logotipo, colores corporativos y aplicaciones visuales.
+       </p>
+</article>
+<article class="publica-card">
+<b>
+        03
+       </b>
+<p>
+        Identificar canales y tono de comunicación.
+       </p>
+</article>
+<article class="publica-card">
+<b>
+        04
+       </b>
+<p>
+        Aplicar una encuesta virtual y analizar sus resultados cuantificables.
+       </p>
+</article>
+<article class="publica-card">
+<b>
+        05
+       </b>
+<p>
+        Formular una matriz FODA y acciones de mejora con indicadores.
+       </p>
+</article>
+</div>
+</div>
+</section>
+<section class="publica-section" id="marco">
+<div class="container">
+<span class="publica-kicker">
+      Capítulo 03
+     </span>
+<h2>
+      3. Marco teórico
+     </h2>
+<p class="section-lead">
+      Bases conceptuales de la gestión de marca y la reputación utilizadas en el informe.
+     </p>
+<div class="report-tablewrap">
+<table class="report-table">
+<thead>
+<tr>
+<th>
+          Concepto
+         </th>
+<th>
+          Referencia del informe
+         </th>
+<th>
+          Aplicación a Yaguar Tours
+         </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+          Imagen pública
+         </td>
+<td>
+          Costa (2004)
+         </td>
+<td>
+          Percepción de seguridad, aventura, confianza y calidad.
+         </td>
+</tr>
+<tr>
+<td>
+          Identidad corporativa
+         </td>
+<td>
+          Capriotti (2009)
+         </td>
+<td>
+          Misión, visión, valores, logotipo, paleta y personalidad.
+         </td>
+</tr>
+<tr>
+<td>
+          Reputación empresarial
+         </td>
+<td>
+          Kotler y Keller (2016)
+         </td>
+<td>
+          Valoración generada por experiencias y cumplimiento de promesas.
+         </td>
+</tr>
+<tr>
+<td>
+          Comunicación digital
+         </td>
+<td>
+          Kaplan y Haenlein (2010)
+         </td>
+<td>
+          Mensajes y atención en redes sociales, sitio web y WhatsApp.
+         </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="publica-section alt" id="metodologia">
+<div class="container">
+<span class="publica-kicker">
+      Capítulo 04
+     </span>
+<h2>
+      4. Metodología de la investigación
+     </h2>
+<p class="section-lead">
+      El documento propone un enfoque mixto (cualitativo y cuantitativo). La muestra planificada en el Word era de 10 personas, mientras que el CSV actualizado contiene 15 respuestas. Los gráficos utilizan la muestra efectiva de 15 personas.
+     </p>
+<div class="report-tablewrap">
+<table class="report-table">
+<thead>
+<tr>
+<th>
+          Técnica
+         </th>
+<th>
+          Muestra / alcance propuesto
+         </th>
+<th>
+          Objetivo
+         </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+          Encuesta virtual
+         </td>
+<td>
+          10 personas al azar
+         </td>
+<td>
+          Conocer frecuencia de viajes, preferencias turísticas, criterios para contratar, canales informativos e intención de contratar una agencia nueva.
+         </td>
+</tr>
+<tr>
+<td>
+          Auditoría de redes
+         </td>
+<td>
+          Facebook, Instagram, TikTok y página web propuestos
+         </td>
+<td>
+          Evaluar identidad gráfica, información y coherencia de comunicación.
+         </td>
+</tr>
+<tr>
+<td>
+          Análisis de sentimientos
+         </td>
+<td>
+          Opiniones de las personas encuestadas (si se recopilan comentarios)
+         </td>
+<td>
+          Clasificar valoraciones positivas, neutras y negativas.
+         </td>
+</tr>
+<tr>
+<td>
+          Observación directa
+         </td>
+<td>
+          5 aplicaciones gráficas
+         </td>
+<td>
+          Revisar logotipo, colores, tipografía y coherencia visual.
+         </td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 style="color:#004d2e;margin-top:36px">
+      4.1 Encuesta sobre preferencias de servicios turísticos en Satipo
+     </h3>
+<p class="section-lead">
+      Las siguientes cinco preguntas y opciones corresponden al instrumento del Word. La encuesta mide preferencias y disposición a contratar, no satisfacción de clientes existentes.
+     </p>
+<div class="survey-question">
+<h3>
+       1. ¿Con qué frecuencia realizas viajes turísticos o visitas lugares recreativos?
+      </h3>
+<div class="survey-options">
+<span>
+        Una vez al mes
+       </span>
+<span>
+        Cada 3 a 6 meses
+       </span>
+<span>
+        Una vez al año
+       </span>
+<span>
+        Casi nunca
+       </span>
+</div>
+<div class="question-results">
+<div class="results-heading">
+<span class="results-eyebrow">
+         RESULTADOS DE LA ENCUESTA · N = 15
+        </span>
+<span class="results-small">
+         Fuente: Google Forms · 15 respuestas
+        </span>
+</div>
+<div class="bar-only">
+<figure class="plot-panel">
+<figcaption>
+          Gráfico de barras · respuestas y porcentajes
+         </figcaption>
+<div class="bar-chart">
+<div class="bar-line">
+<span class="bar-name">
+            Una vez al mes
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:13.3333%;background:#007a41">
+</div>
+</div>
+<strong>
+            2 (13.3%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            Cada 3 a 6 meses
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:13.3333%;background:#f5a247">
+</div>
+</div>
+<strong>
+            2 (13.3%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            Una vez al año
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:53.3333%;background:#3e9fbb">
+</div>
+</div>
+<strong>
+            8 (53.3%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            Casi nunca
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:20.0000%;background:#8a70ba">
+</div>
+</div>
+<strong>
+            3 (20.0%)
+           </strong>
+</div>
+</div>
+<div class="bar-axis">
+<span>
+           0%
+          </span>
+<span>
+           25%
+          </span>
+<span>
+           50%
+          </span>
+<span>
+           75%
+          </span>
+<span>
+           100%
+          </span>
+</div>
+<p aria-live="polite" class="chart-interaction-status">
+          Pasa el cursor o selecciona una barra para ver sus datos.
+         </p>
+</figure>
+</div>
+</div>
+</div>
+<div class="survey-question">
+<h3>
+       2. ¿Qué tipo de turismo te gustaría realizar en Satipo y sus alrededores?
+      </h3>
+<div class="survey-options">
+<span>
+        Turismo de aventura
+       </span>
+<span>
+        Turismo de naturaleza (cataratas, ríos y bosques)
+       </span>
+<span>
+        Turismo cultural y vivencial
+       </span>
+<span>
+        Turismo gastronómico
+       </span>
+</div>
+<div class="question-results">
+<div class="results-heading">
+<span class="results-eyebrow">
+         RESULTADOS DE LA ENCUESTA · N = 15
+        </span>
+<span class="results-small">
+         Fuente: Google Forms · 15 respuestas
+        </span>
+</div>
+<div class="bar-only">
+<figure class="plot-panel">
+<figcaption>
+          Gráfico de barras · respuestas y porcentajes
+         </figcaption>
+<div class="bar-chart">
+<div class="bar-line">
+<span class="bar-name">
+            Turismo de aventura
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:13.3333%;background:#007a41">
+</div>
+</div>
+<strong>
+            2 (13.3%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            Turismo de naturaleza (cataratas, ríos y bosques)
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:66.6667%;background:#f5a247">
+</div>
+</div>
+<strong>
+            10 (66.7%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            Turismo cultural y vivencial
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:20.0000%;background:#3e9fbb">
+</div>
+</div>
+<strong>
+            3 (20.0%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            Turismo gastronómico
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:0.0000%;background:#8a70ba">
+</div>
+</div>
+<strong>
+            0 (0.0%)
+           </strong>
+</div>
+</div>
+<div class="bar-axis">
+<span>
+           0%
+          </span>
+<span>
+           25%
+          </span>
+<span>
+           50%
+          </span>
+<span>
+           75%
+          </span>
+<span>
+           100%
+          </span>
+</div>
+<p aria-live="polite" class="chart-interaction-status">
+          Pasa el cursor o selecciona una barra para ver sus datos.
+         </p>
+</figure>
+</div>
+</div>
+</div>
+<div class="survey-question">
+<h3>
+       3. ¿Qué aspecto consideras más importante al contratar una agencia de turismo?
+      </h3>
+<div class="survey-options">
+<span>
+        Seguridad y confianza
+       </span>
+<span>
+        Precios accesibles
+       </span>
+<span>
+        Buena atención y guías capacitados
+       </span>
+<span>
+        Variedad de destinos y actividades
+       </span>
+</div>
+<div class="question-results">
+<div class="results-heading">
+<span class="results-eyebrow">
+         RESULTADOS DE LA ENCUESTA · N = 15
+        </span>
+<span class="results-small">
+         Fuente: Google Forms · 15 respuestas
+        </span>
+</div>
+<div class="bar-only">
+<figure class="plot-panel">
+<figcaption>
+          Gráfico de barras · respuestas y porcentajes
+         </figcaption>
+<div class="bar-chart">
+<div class="bar-line">
+<span class="bar-name">
+            Seguridad y confianza
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:40.0000%;background:#007a41">
+</div>
+</div>
+<strong>
+            6 (40.0%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            Precios accesibles
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:20.0000%;background:#f5a247">
+</div>
+</div>
+<strong>
+            3 (20.0%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            Buena atención y guías capacitados
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:40.0000%;background:#3e9fbb">
+</div>
+</div>
+<strong>
+            6 (40.0%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            Variedad de destinos y actividades
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:0.0000%;background:#8a70ba">
+</div>
+</div>
+<strong>
+            0 (0.0%)
+           </strong>
+</div>
+</div>
+<div class="bar-axis">
+<span>
+           0%
+          </span>
+<span>
+           25%
+          </span>
+<span>
+           50%
+          </span>
+<span>
+           75%
+          </span>
+<span>
+           100%
+          </span>
+</div>
+<p aria-live="polite" class="chart-interaction-status">
+          Pasa el cursor o selecciona una barra para ver sus datos.
+         </p>
+</figure>
+</div>
+</div>
+</div>
+<div class="survey-question">
+<h3>
+       4. ¿Por qué medio prefieres recibir información sobre paquetes turísticos y promociones?
+      </h3>
+<div class="survey-options">
+<span>
+        Facebook
+       </span>
+<span>
+        TikTok
+       </span>
+<span>
+        Instagram
+       </span>
+<span>
+        WhatsApp
+       </span>
+<span>
+        Página web
+       </span>
+</div>
+<div class="question-results">
+<div class="results-heading">
+<span class="results-eyebrow">
+         RESULTADOS DE LA ENCUESTA · N = 15
+        </span>
+<span class="results-small">
+         Fuente: Google Forms · 15 respuestas
+        </span>
+</div>
+<div class="bar-only">
+<figure class="plot-panel">
+<figcaption>
+          Gráfico de barras · respuestas y porcentajes
+         </figcaption>
+<div class="bar-chart">
+<div class="bar-line">
+<span class="bar-name">
+            Facebook
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:0.0000%;background:#007a41">
+</div>
+</div>
+<strong>
+            0 (0.0%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            TikTok
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:46.6667%;background:#f5a247">
+</div>
+</div>
+<strong>
+            7 (46.7%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            Instagram
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:0.0000%;background:#3e9fbb">
+</div>
+</div>
+<strong>
+            0 (0.0%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            WhatsApp
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:40.0000%;background:#8a70ba">
+</div>
+</div>
+<strong>
+            6 (40.0%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            Página web
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:13.3333%;background:#cb735a">
+</div>
+</div>
+<strong>
+            2 (13.3%)
+           </strong>
+</div>
+</div>
+<div class="bar-axis">
+<span>
+           0%
+          </span>
+<span>
+           25%
+          </span>
+<span>
+           50%
+          </span>
+<span>
+           75%
+          </span>
+<span>
+           100%
+          </span>
+</div>
+<p aria-live="polite" class="chart-interaction-status">
+          Pasa el cursor o selecciona una barra para ver sus datos.
+         </p>
+</figure>
+</div>
+</div>
+</div>
+<div class="survey-question">
+<h3>
+       5. ¿Estarías dispuesto(a) a contratar los servicios de una nueva agencia turística que ofrezca recorridos organizados en Satipo y Pangoa?
+      </h3>
+<div class="survey-options">
+<span>
+        Sí, definitivamente
+       </span>
+<span>
+        Tal vez, dependiendo del precio y los servicios
+       </span>
+<span>
+        No estoy seguro(a)
+       </span>
+<span>
+        No estaría interesado(a)
+       </span>
+</div>
+<div class="question-results">
+<div class="results-heading">
+<span class="results-eyebrow">
+         RESULTADOS DE LA ENCUESTA · N = 15
+        </span>
+<span class="results-small">
+         Fuente: Google Forms · 15 respuestas
+        </span>
+</div>
+<div class="bar-only">
+<figure class="plot-panel">
+<figcaption>
+          Gráfico de barras · respuestas y porcentajes
+         </figcaption>
+<div class="bar-chart">
+<div class="bar-line">
+<span class="bar-name">
+            Sí, definitivamente
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:20.0000%;background:#007a41">
+</div>
+</div>
+<strong>
+            3 (20.0%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            Tal vez, dependiendo del precio y los servicios
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:80.0000%;background:#f5a247">
+</div>
+</div>
+<strong>
+            12 (80.0%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            No estoy seguro(a)
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:0.0000%;background:#3e9fbb">
+</div>
+</div>
+<strong>
+            0 (0.0%)
+           </strong>
+</div>
+<div class="bar-line">
+<span class="bar-name">
+            No estaría interesado(a)
+           </span>
+<div class="bar-rail">
+<div class="bar-amount" style="width:0.0000%;background:#8a70ba">
+</div>
+</div>
+<strong>
+            0 (0.0%)
+           </strong>
+</div>
+</div>
+<div class="bar-axis">
+<span>
+           0%
+          </span>
+<span>
+           25%
+          </span>
+<span>
+           50%
+          </span>
+<span>
+           75%
+          </span>
+<span>
+           100%
+          </span>
+</div>
+<p aria-live="polite" class="chart-interaction-status">
+          Pasa el cursor o selecciona una barra para ver sus datos.
+         </p>
+</figure>
+</div>
+</div>
+</div>
+<div class="survey-import">
+<label for="csvEncuesta">
+       Actualizar estadísticas con un nuevo CSV (opcional)
+      </label>
+<input accept=".csv,text/csv" aria-describedby="csvHelp" id="csvEncuesta" type="file"/>
+<p class="publica-note" id="csvHelp">
+       Los gráficos ya incluyen las 15 respuestas del CSV actualizado. Si importas un CSV nuevo, se recalcularán los gráficos circulares, las tablas y los gráficos de barras sin enviar datos a un servidor.
+      </p>
+<div class="survey-status" id="csvStatus" role="status">
+       Datos reales cargados en esta página: 15 respuestas del formulario. Los gráficos se muestran automáticamente y también se pueden actualizar con otro CSV.
+      </div>
+<div class="summary-stats">
+<div class="summary-stat">
+<strong id="totalRespuestas">
+         15
+        </strong>
+<small>
+         Respuestas registradas
+        </small>
+</div>
+<div class="summary-stat">
+<strong id="preguntasAnalizadas">
+         5
+        </strong>
+<small>
+         Preguntas analizadas
+        </small>
+</div>
+<div class="summary-stat">
+<strong id="tamanoMuestra">
+         10
+        </strong>
+<small>
+         Muestra planificada en el informe
+        </small>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="publica-section" id="analisis">
+<div class="container">
+<span class="publica-kicker">
+      Capítulo 05
+     </span>
+<h2>
+      5. Análisis de imagen pública de la empresa Yaguar Tours
+     </h2>
+<p class="section-lead">
+      Este capítulo examina la imagen proyectada por Yaguar Tours a partir de su identidad gráfica y de las preferencias recogidas en la encuesta virtual. Los resultados corresponden a potenciales clientes, no a evaluaciones de clientes que ya hayan utilizado los servicios.
+     </p>
+<div class="cap5-block" id="capitulo-5-1">
+<h3>
+       5.1 Identidad visual y corporativa
+      </h3>
+<div class="publica-grid">
+<article class="publica-card">
+<span class="publica-num">
+         IDENTIDAD
+        </span>
+<h4>
+         Concepto visual
+        </h4>
+<p>
+         La propuesta emplea verdes corporativos asociados con naturaleza y biodiversidad, elementos del jaguar y referencias al paisaje selvático de Pangoa.
+        </p>
+</article>
+<article class="publica-card">
+<span class="publica-num">
+         COHERENCIA
+        </span>
+<h4>
+         Aplicaciones gráficas
+        </h4>
+<p>
+         Es importante mantener el isologo, la tipografía y los colores de marca de forma consistente en afiches, redes sociales, uniformes y materiales de promoción.
+        </p>
+</article>
+<article class="publica-card">
+<span class="publica-num">
+         VALOR PROYECTADO
+        </span>
+<h4>
+         Turismo y confianza
+        </h4>
+<p>
+         La comunicación debe transmitir aventura, conocimiento de la zona, información clara y seguridad para los visitantes. Estos son objetivos de imagen, no valoraciones comprobadas.
+        </p>
+</article>
+</div>
+</div>
+<div class="cap5-block" id="capitulo-5-2">
+<h3>
+       5.2 Evidencias y resultados estadísticos de la encuesta
+      </h3>
+<p class="section-lead">
+       Se analizaron 15 respuestas reales del formulario. Las cinco preguntas miden hábitos de viaje, tipo de turismo preferido, criterios al elegir una agencia, canal informativo e intención de contratar. La encuesta mide preferencias e intención de contratar, no satisfacción de clientes existentes; por eso los resultados se interpretan como percepción e interés de potenciales clientes.
+      </p>
+<section aria-label="Galería de evidencias de la encuesta" class="survey-evidence" id="evidencias-encuestas">
+<div class="evidence-header">
+<div>
+<span class="evidence-eyebrow">
+          REGISTRO DOCUMENTAL / ENCUESTA
+         </span>
+<h3>
+          Evidencias de la encuesta
+         </h3>
+<p class="evidence-lead">
+          Doce espacios para capturas y fotografías de la aplicación de la encuesta. Selecciona una tarjeta para verla en tamaño ampliado.
+         </p>
+</div>
+<span class="evidence-total">
+<span aria-hidden="true">
+          ▦
+         </span>
+         12 evidencias
+        </span>
+</div>
+<div class="evidence-gallery" id="evidenceGallery">
+<button aria-label="Ampliar evidencia 1" class="evidence-card" data-evidence-index="0" type="button">
+<span class="evidence-photo">
+<img alt="Evidencia 01 de la encuesta sobre turismo en Satipo y Pangoa" decoding="async" loading="lazy" onerror="this.classList.add('is-missing');this.parentElement.classList.add('image-unavailable')" onload="this.classList.remove('is-missing');this.parentElement.classList.remove('image-unavailable')" src="img/Captura de pantalla 2026-11-11 093913.png"/>
+<span class="evidence-empty">
+<span aria-hidden="true" class="evidence-empty-icon">
+            ▧
+           </span>
+<strong>
+            Imagen pendiente
+           </strong>
+<small>
+            img/evidencia-encuesta-1.jpg
+           </small>
+</span>
+<span aria-hidden="true" class="evidence-zoom">
+           ⤢
+          </span>
+</span>
+<span class="evidence-card-body">
+<span class="evidence-label">
+           EVIDENCIA 01
+          </span>
+<span aria-hidden="true" class="evidence-card-arrow">
+           ↗
+          </span>
+</span>
+</button>
+<button aria-label="Ampliar evidencia 2" class="evidence-card" data-evidence-index="1" type="button">
+<span class="evidence-photo">
+<img alt="Evidencia 02 de la encuesta sobre turismo en Satipo y Pangoa" decoding="async" loading="lazy" onerror="this.classList.add('is-missing');this.parentElement.classList.add('image-unavailable')" onload="this.classList.remove('is-missing');this.parentElement.classList.remove('image-unavailable')" src="img/Captura de pantalla 2026-11-11 093926.png"/>
+<span class="evidence-empty">
+<span aria-hidden="true" class="evidence-empty-icon">
+            ▧
+           </span>
+<strong>
+            Imagen pendiente
+           </strong>
+<small>
+            img/evidencia-encuesta-2.jpg
+           </small>
+</span>
+<span aria-hidden="true" class="evidence-zoom">
+           ⤢
+          </span>
+</span>
+<span class="evidence-card-body">
+<span class="evidence-label">
+           EVIDENCIA 02
+          </span>
+<span aria-hidden="true" class="evidence-card-arrow">
+           ↗
+          </span>
+</span>
+</button>
+<button aria-label="Ampliar evidencia 3" class="evidence-card" data-evidence-index="2" type="button">
+<span class="evidence-photo">
+<img alt="Evidencia 03 de la encuesta sobre turismo en Satipo y Pangoa" decoding="async" loading="lazy" onerror="this.classList.add('is-missing');this.parentElement.classList.add('image-unavailable')" onload="this.classList.remove('is-missing');this.parentElement.classList.remove('image-unavailable')" src="img/Captura de pantalla 2026-11-11 093944.png"/>
+<span class="evidence-empty">
+<span aria-hidden="true" class="evidence-empty-icon">
+            ▧
+           </span>
+<strong>
+            Imagen pendiente
+           </strong>
+<small>
+            img/evidencia-encuesta-3.jpg
+           </small>
+</span>
+<span aria-hidden="true" class="evidence-zoom">
+           ⤢
+          </span>
+</span>
+<span class="evidence-card-body">
+<span class="evidence-label">
+           EVIDENCIA 03
+          </span>
+<span aria-hidden="true" class="evidence-card-arrow">
+           ↗
+          </span>
+</span>
+</button>
+<button aria-label="Ampliar evidencia 4" class="evidence-card" data-evidence-index="3" type="button">
+<span class="evidence-photo">
+<img alt="Evidencia 04 de la encuesta sobre turismo en Satipo y Pangoa" decoding="async" loading="lazy" onerror="this.classList.add('is-missing');this.parentElement.classList.add('image-unavailable')" onload="this.classList.remove('is-missing');this.parentElement.classList.remove('image-unavailable')" src="img/Captura de pantalla 2026-11-11 093959.png"/>
+<span class="evidence-empty">
+<span aria-hidden="true" class="evidence-empty-icon">
+            ▧
+           </span>
+<strong>
+            Imagen pendiente
+           </strong>
+<small>
+            img/evidencia-encuesta-4.jpg
+           </small>
+</span>
+<span aria-hidden="true" class="evidence-zoom">
+           ⤢
+          </span>
+</span>
+<span class="evidence-card-body">
+<span class="evidence-label">
+           EVIDENCIA 04
+          </span>
+<span aria-hidden="true" class="evidence-card-arrow">
+           ↗
+          </span>
+</span>
+</button>
+<button aria-label="Ampliar evidencia 5" class="evidence-card" data-evidence-index="4" type="button">
+<span class="evidence-photo">
+<img alt="Evidencia 05 de la encuesta sobre turismo en Satipo y Pangoa" decoding="async" loading="lazy" onerror="this.classList.add('is-missing');this.parentElement.classList.add('image-unavailable')" onload="this.classList.remove('is-missing');this.parentElement.classList.remove('image-unavailable')" src="img/Captura de pantalla 2026-11-11 094012.png"/>
+<span class="evidence-empty">
+<span aria-hidden="true" class="evidence-empty-icon">
+            ▧
+           </span>
+<strong>
+            Imagen pendiente
+           </strong>
+<small>
+            img/evidencia-encuesta-5.jpg
+           </small>
+</span>
+<span aria-hidden="true" class="evidence-zoom">
+           ⤢
+          </span>
+</span>
+<span class="evidence-card-body">
+<span class="evidence-label">
+           EVIDENCIA 05
+          </span>
+<span aria-hidden="true" class="evidence-card-arrow">
+           ↗
+          </span>
+</span>
+</button>
+<button aria-label="Ampliar evidencia 6" class="evidence-card" data-evidence-index="5" type="button">
+<span class="evidence-photo">
+<img alt="Evidencia 06 de la encuesta sobre turismo en Satipo y Pangoa" decoding="async" loading="lazy" onerror="this.classList.add('is-missing');this.parentElement.classList.add('image-unavailable')" onload="this.classList.remove('is-missing');this.parentElement.classList.remove('image-unavailable')" src="img/Captura de pantalla 2026-11-11 094048.png"/>
+<span class="evidence-empty">
+<span aria-hidden="true" class="evidence-empty-icon">
+            ▧
+           </span>
+<strong>
+            Imagen pendiente
+           </strong>
+<small>
+            img/evidencia-encuesta-6.jpg
+           </small>
+</span>
+<span aria-hidden="true" class="evidence-zoom">
+           ⤢
+          </span>
+</span>
+<span class="evidence-card-body">
+<span class="evidence-label">
+           EVIDENCIA 06
+          </span>
+<span aria-hidden="true" class="evidence-card-arrow">
+           ↗
+          </span>
+</span>
+</button>
+<button aria-label="Ampliar evidencia 7" class="evidence-card" data-evidence-index="6" type="button">
+<span class="evidence-photo">
+<img alt="Evidencia 07 de la encuesta sobre turismo en Satipo y Pangoa" decoding="async" loading="lazy" onerror="this.classList.add('is-missing');this.parentElement.classList.add('image-unavailable')" onload="this.classList.remove('is-missing');this.parentElement.classList.remove('image-unavailable')" src="img/Captura de pantalla 2026-11-11 094555.png"/>
+<span class="evidence-empty">
+<span aria-hidden="true" class="evidence-empty-icon">
+            ▧
+           </span>
+<strong>
+            Imagen pendiente
+           </strong>
+<small>
+            img/evidencia-encuesta-7.jpg
+           </small>
+</span>
+<span aria-hidden="true" class="evidence-zoom">
+           ⤢
+          </span>
+</span>
+<span class="evidence-card-body">
+<span class="evidence-label">
+           EVIDENCIA 07
+          </span>
+<span aria-hidden="true" class="evidence-card-arrow">
+           ↗
+          </span>
+</span>
+</button>
+<button aria-label="Ampliar evidencia 8" class="evidence-card" data-evidence-index="7" type="button">
+<span class="evidence-photo">
+<img alt="Evidencia 08 de la encuesta sobre turismo en Satipo y Pangoa" decoding="async" loading="lazy" onerror="this.classList.add('is-missing');this.parentElement.classList.add('image-unavailable')" onload="this.classList.remove('is-missing');this.parentElement.classList.remove('image-unavailable')" src="img/Captura de pantalla 2026-11-11 095149.png"/>
+<span class="evidence-empty">
+<span aria-hidden="true" class="evidence-empty-icon">
+            ▧
+           </span>
+<strong>
+            Imagen pendiente
+           </strong>
+<small>
+            img/evidencia-encuesta-8.jpg
+           </small>
+</span>
+<span aria-hidden="true" class="evidence-zoom">
+           ⤢
+          </span>
+</span>
+<span class="evidence-card-body">
+<span class="evidence-label">
+           EVIDENCIA 08
+          </span>
+<span aria-hidden="true" class="evidence-card-arrow">
+           ↗
+          </span>
+</span>
+</button>
+<button aria-label="Ampliar evidencia 9" class="evidence-card" data-evidence-index="8" type="button">
+<span class="evidence-photo">
+<img alt="Evidencia 09 de la encuesta sobre turismo en Satipo y Pangoa" decoding="async" loading="lazy" onerror="this.classList.add('is-missing');this.parentElement.classList.add('image-unavailable')" onload="this.classList.remove('is-missing');this.parentElement.classList.remove('image-unavailable')" src="img/Captura de pantalla 2026-11-11 095149.png"/>
+<span class="evidence-empty">
+<span aria-hidden="true" class="evidence-empty-icon">
+            ▧
+           </span>
+<strong>
+            Imagen pendiente
+           </strong>
+<small>
+            img/evidencia-encuesta-9.jpg
+           </small>
+</span>
+<span aria-hidden="true" class="evidence-zoom">
+           ⤢
+          </span>
+</span>
+<span class="evidence-card-body">
+<span class="evidence-label">
+           EVIDENCIA 09
+          </span>
+<span aria-hidden="true" class="evidence-card-arrow">
+           ↗
+          </span>
+</span>
+</button>
+<button aria-label="Ampliar evidencia 10" class="evidence-card" data-evidence-index="9" type="button">
+<span class="evidence-photo">
+<img alt="Evidencia 10 de la encuesta sobre turismo en Satipo y Pangoa" decoding="async" loading="lazy" onerror="this.classList.add('is-missing');this.parentElement.classList.add('image-unavailable')" onload="this.classList.remove('is-missing');this.parentElement.classList.remove('image-unavailable')" src="img/Captura de pantalla 2026-11-11 095209.png"/>
+<span class="evidence-empty">
+<span aria-hidden="true" class="evidence-empty-icon">
+            ▧
+           </span>
+<strong>
+            Imagen pendiente
+           </strong>
+<small>
+            img/evidencia-encuesta-10.jpg
+           </small>
+</span>
+<span aria-hidden="true" class="evidence-zoom">
+           ⤢
+          </span>
+</span>
+<span class="evidence-card-body">
+<span class="evidence-label">
+           EVIDENCIA 10
+          </span>
+<span aria-hidden="true" class="evidence-card-arrow">
+           ↗
+          </span>
+</span>
+</button>
+<button aria-label="Ampliar evidencia 11" class="evidence-card" data-evidence-index="10" type="button">
+<span class="evidence-photo">
+<img alt="Evidencia 11 de la encuesta sobre turismo en Satipo y Pangoa" decoding="async" loading="lazy" onerror="this.classList.add('is-missing');this.parentElement.classList.add('image-unavailable')" onload="this.classList.remove('is-missing');this.parentElement.classList.remove('image-unavailable')" src="img/Captura de pantalla 2026-11-11 095248.png"/>
+<span class="evidence-empty">
+<span aria-hidden="true" class="evidence-empty-icon">
+            ▧
+           </span>
+<strong>
+            Imagen pendiente
+           </strong>
+<small>
+            img/evidencia-encuesta-11.jpg
+           </small>
+</span>
+<span aria-hidden="true" class="evidence-zoom">
+           ⤢
+          </span>
+</span>
+<span class="evidence-card-body">
+<span class="evidence-label">
+           EVIDENCIA 11
+          </span>
+<span aria-hidden="true" class="evidence-card-arrow">
+           ↗
+          </span>
+</span>
+</button>
+<button aria-label="Ampliar evidencia 12" class="evidence-card" data-evidence-index="11" type="button">
+<span class="evidence-photo">
+<img alt="Evidencia 12 de la encuesta sobre turismo en Satipo y Pangoa" decoding="async" loading="lazy" onerror="this.classList.add('is-missing');this.parentElement.classList.add('image-unavailable')" onload="this.classList.remove('is-missing');this.parentElement.classList.remove('image-unavailable')" src="img/evidencia-encuesta-12.jpg"/>
+<span class="evidence-empty">
+<span aria-hidden="true" class="evidence-empty-icon">
+            ▧
+           </span>
+<strong>
+            Imagen pendiente
+           </strong>
+<small>
+            img/evidencia-encuesta-12.jpg
+           </small>
+</span>
+<span aria-hidden="true" class="evidence-zoom">
+           ⤢
+          </span>
+</span>
+<span class="evidence-card-body">
+<span class="evidence-label">
+           EVIDENCIA 12
+          </span>
+<span aria-hidden="true" class="evidence-card-arrow">
+           ↗
+          </span>
+</span>
+</button>
+</div>
+<p class="evidence-footnote">
+        Las tarjetas muestran imágenes desde tu carpeta
+        <code>
+         img
+        </code>
+        . Los espacios 11 y 12 se activarán al agregar sus archivos correspondientes. Para ampliar una imagen existente, haz clic sobre ella.
+       </p>
+</section>
+<div class="survey-report-list" id="graficos-circulares">
+<article class="survey-report-question pie-result-card" data-question="1" id="resultado-pregunta-1">
+<h4>
+         1. ¿Con qué frecuencia realizas viajes turísticos o visitas lugares recreativos?
+        </h4>
+<div class="survey-comparison-wrap">
+<table aria-label="Cuadro comparativo de la pregunta 1" class="survey-comparison-table">
+<thead>
+<tr>
+<th>
+             Opción
+            </th>
+<th>
+             Cantidad
+            </th>
+<th>
+             Porcentaje
+            </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+             Una vez al mes
+            </td>
+<td>
+             2
+            </td>
+<td>
+             13.3%
+            </td>
+</tr>
+<tr>
+<td>
+             Cada 3 a 6 meses
+            </td>
+<td>
+             2
+            </td>
+<td>
+             13.3%
+            </td>
+</tr>
+<tr>
+<td>
+             Una vez al año
+            </td>
+<td>
+             8
+            </td>
+<td>
+             53.3%
+            </td>
+</tr>
+<tr>
+<td>
+             Casi nunca
+            </td>
+<td>
+             3
+            </td>
+<td>
+             20.0%
+            </td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td>
+             Total
+            </td>
+<td>
+             15
+            </td>
+<td>
+             100%
+            </td>
+</tr>
+</tfoot>
+</table>
+</div>
+<figure class="plot-panel">
+<figcaption>
+          Gráfico estadístico circular · Pregunta 1
+         </figcaption>
+<div class="pie-layout">
+<div aria-label="Una vez al mes: 2 (13.3%); Cada 3 a 6 meses: 2 (13.3%); Una vez al año: 8 (53.3%); Casi nunca: 3 (20.0%)" class="pie-chart" role="button" style="background:conic-gradient(#007a41 0.00000% 13.33333%, #f5a247 13.33333% 26.66667%, #3e9fbb 26.66667% 80.00000%, #8a70ba 80.00000% 100.00000%)" tabindex="0">
+</div>
+<ul class="pie-legend">
+<li>
+<span class="pie-dot" style="background:#007a41">
+</span>
+<span class="pie-name">
+             Una vez al mes
+            </span>
+<strong>
+             2 · 13.3%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#f5a247">
+</span>
+<span class="pie-name">
+             Cada 3 a 6 meses
+            </span>
+<strong>
+             2 · 13.3%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#3e9fbb">
+</span>
+<span class="pie-name">
+             Una vez al año
+            </span>
+<strong>
+             8 · 53.3%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#8a70ba">
+</span>
+<span class="pie-name">
+             Casi nunca
+            </span>
+<strong>
+             3 · 20.0%
+            </strong>
+</li>
+</ul>
+</div>
+<p aria-live="polite" class="chart-interaction-status">
+          Pasa el cursor sobre el círculo o selecciona una categoría para ver sus datos.
+         </p>
+</figure>
+<p class="survey-chart-source">
+         Fuente: encuesta virtual · 15 respuestas.
+        </p>
+</article>
+<article class="survey-report-question pie-result-card" data-question="2" id="resultado-pregunta-2">
+<h4>
+         2. ¿Qué tipo de turismo te gustaría realizar en Satipo y sus alrededores?
+        </h4>
+<div class="survey-comparison-wrap">
+<table aria-label="Cuadro comparativo de la pregunta 2" class="survey-comparison-table">
+<thead>
+<tr>
+<th>
+             Opción
+            </th>
+<th>
+             Cantidad
+            </th>
+<th>
+             Porcentaje
+            </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+             Turismo de aventura
+            </td>
+<td>
+             2
+            </td>
+<td>
+             13.3%
+            </td>
+</tr>
+<tr>
+<td>
+             Turismo de naturaleza (cataratas, ríos y bosques)
+            </td>
+<td>
+             10
+            </td>
+<td>
+             66.7%
+            </td>
+</tr>
+<tr>
+<td>
+             Turismo cultural y vivencial
+            </td>
+<td>
+             3
+            </td>
+<td>
+             20.0%
+            </td>
+</tr>
+<tr>
+<td>
+             Turismo gastronómico
+            </td>
+<td>
+             0
+            </td>
+<td>
+             0.0%
+            </td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td>
+             Total
+            </td>
+<td>
+             15
+            </td>
+<td>
+             100%
+            </td>
+</tr>
+</tfoot>
+</table>
+</div>
+<figure class="plot-panel">
+<figcaption>
+          Gráfico estadístico circular · Pregunta 2
+         </figcaption>
+<div class="pie-layout">
+<div aria-label="Turismo de aventura: 2 (13.3%); Turismo de naturaleza (cataratas, ríos y bosques): 10 (66.7%); Turismo cultural y vivencial: 3 (20.0%); Turismo gastronómico: 0 (0.0%)" class="pie-chart" role="button" style="background:conic-gradient(#007a41 0.00000% 13.33333%, #f5a247 13.33333% 80.00000%, #3e9fbb 80.00000% 100.00000%)" tabindex="0">
+</div>
+<ul class="pie-legend">
+<li>
+<span class="pie-dot" style="background:#007a41">
+</span>
+<span class="pie-name">
+             Turismo de aventura
+            </span>
+<strong>
+             2 · 13.3%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#f5a247">
+</span>
+<span class="pie-name">
+             Turismo de naturaleza (cataratas, ríos y bosques)
+            </span>
+<strong>
+             10 · 66.7%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#3e9fbb">
+</span>
+<span class="pie-name">
+             Turismo cultural y vivencial
+            </span>
+<strong>
+             3 · 20.0%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#8a70ba">
+</span>
+<span class="pie-name">
+             Turismo gastronómico
+            </span>
+<strong>
+             0 · 0.0%
+            </strong>
+</li>
+</ul>
+</div>
+<p aria-live="polite" class="chart-interaction-status">
+          Pasa el cursor sobre el círculo o selecciona una categoría para ver sus datos.
+         </p>
+</figure>
+<p class="survey-chart-source">
+         Fuente: encuesta virtual · 15 respuestas.
+        </p>
+</article>
+<article class="survey-report-question pie-result-card" data-question="3" id="resultado-pregunta-3">
+<h4>
+         3. ¿Qué aspecto consideras más importante al contratar una agencia de turismo?
+        </h4>
+<div class="survey-comparison-wrap">
+<table aria-label="Cuadro comparativo de la pregunta 3" class="survey-comparison-table">
+<thead>
+<tr>
+<th>
+             Opción
+            </th>
+<th>
+             Cantidad
+            </th>
+<th>
+             Porcentaje
+            </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+             Seguridad y confianza
+            </td>
+<td>
+             6
+            </td>
+<td>
+             40.0%
+            </td>
+</tr>
+<tr>
+<td>
+             Precios accesibles
+            </td>
+<td>
+             3
+            </td>
+<td>
+             20.0%
+            </td>
+</tr>
+<tr>
+<td>
+             Buena atención y guías capacitados
+            </td>
+<td>
+             6
+            </td>
+<td>
+             40.0%
+            </td>
+</tr>
+<tr>
+<td>
+             Variedad de destinos y actividades
+            </td>
+<td>
+             0
+            </td>
+<td>
+             0.0%
+            </td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td>
+             Total
+            </td>
+<td>
+             15
+            </td>
+<td>
+             100%
+            </td>
+</tr>
+</tfoot>
+</table>
+</div>
+<figure class="plot-panel">
+<figcaption>
+          Gráfico estadístico circular · Pregunta 3
+         </figcaption>
+<div class="pie-layout">
+<div aria-label="Seguridad y confianza: 6 (40.0%); Precios accesibles: 3 (20.0%); Buena atención y guías capacitados: 6 (40.0%); Variedad de destinos y actividades: 0 (0.0%)" class="pie-chart" role="button" style="background:conic-gradient(#007a41 0.00000% 40.00000%, #f5a247 40.00000% 60.00000%, #3e9fbb 60.00000% 100.00000%)" tabindex="0">
+</div>
+<ul class="pie-legend">
+<li>
+<span class="pie-dot" style="background:#007a41">
+</span>
+<span class="pie-name">
+             Seguridad y confianza
+            </span>
+<strong>
+             6 · 40.0%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#f5a247">
+</span>
+<span class="pie-name">
+             Precios accesibles
+            </span>
+<strong>
+             3 · 20.0%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#3e9fbb">
+</span>
+<span class="pie-name">
+             Buena atención y guías capacitados
+            </span>
+<strong>
+             6 · 40.0%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#8a70ba">
+</span>
+<span class="pie-name">
+             Variedad de destinos y actividades
+            </span>
+<strong>
+             0 · 0.0%
+            </strong>
+</li>
+</ul>
+</div>
+<p aria-live="polite" class="chart-interaction-status">
+          Pasa el cursor sobre el círculo o selecciona una categoría para ver sus datos.
+         </p>
+</figure>
+<p class="survey-chart-source">
+         Fuente: encuesta virtual · 15 respuestas.
+        </p>
+</article>
+<article class="survey-report-question pie-result-card" data-question="4" id="resultado-pregunta-4">
+<h4>
+         4. ¿Por qué medio prefieres recibir información sobre paquetes turísticos y promociones?
+        </h4>
+<div class="survey-comparison-wrap">
+<table aria-label="Cuadro comparativo de la pregunta 4" class="survey-comparison-table">
+<thead>
+<tr>
+<th>
+             Opción
+            </th>
+<th>
+             Cantidad
+            </th>
+<th>
+             Porcentaje
+            </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+             Facebook
+            </td>
+<td>
+             0
+            </td>
+<td>
+             0.0%
+            </td>
+</tr>
+<tr>
+<td>
+             TikTok
+            </td>
+<td>
+             7
+            </td>
+<td>
+             46.7%
+            </td>
+</tr>
+<tr>
+<td>
+             Instagram
+            </td>
+<td>
+             0
+            </td>
+<td>
+             0.0%
+            </td>
+</tr>
+<tr>
+<td>
+             WhatsApp
+            </td>
+<td>
+             6
+            </td>
+<td>
+             40.0%
+            </td>
+</tr>
+<tr>
+<td>
+             Página web
+            </td>
+<td>
+             2
+            </td>
+<td>
+             13.3%
+            </td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td>
+             Total
+            </td>
+<td>
+             15
+            </td>
+<td>
+             100%
+            </td>
+</tr>
+</tfoot>
+</table>
+</div>
+<figure class="plot-panel">
+<figcaption>
+          Gráfico estadístico circular · Pregunta 4
+         </figcaption>
+<div class="pie-layout">
+<div aria-label="Facebook: 0 (0.0%); TikTok: 7 (46.7%); Instagram: 0 (0.0%); WhatsApp: 6 (40.0%); Página web: 2 (13.3%)" class="pie-chart" role="button" style="background:conic-gradient(#f5a247 0.00000% 46.66667%, #8a70ba 46.66667% 86.66667%, #cb735a 86.66667% 100.00000%)" tabindex="0">
+</div>
+<ul class="pie-legend">
+<li>
+<span class="pie-dot" style="background:#007a41">
+</span>
+<span class="pie-name">
+             Facebook
+            </span>
+<strong>
+             0 · 0.0%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#f5a247">
+</span>
+<span class="pie-name">
+             TikTok
+            </span>
+<strong>
+             7 · 46.7%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#3e9fbb">
+</span>
+<span class="pie-name">
+             Instagram
+            </span>
+<strong>
+             0 · 0.0%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#8a70ba">
+</span>
+<span class="pie-name">
+             WhatsApp
+            </span>
+<strong>
+             6 · 40.0%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#cb735a">
+</span>
+<span class="pie-name">
+             Página web
+            </span>
+<strong>
+             2 · 13.3%
+            </strong>
+</li>
+</ul>
+</div>
+<p aria-live="polite" class="chart-interaction-status">
+          Pasa el cursor sobre el círculo o selecciona una categoría para ver sus datos.
+         </p>
+</figure>
+<p class="survey-chart-source">
+         Fuente: encuesta virtual · 15 respuestas.
+        </p>
+</article>
+<article class="survey-report-question pie-result-card" data-question="5" id="resultado-pregunta-5">
+<h4>
+         5. ¿Estarías dispuesto(a) a contratar los servicios de una nueva agencia turística que ofrezca recorridos organizados en Satipo y Pangoa?
+        </h4>
+<div class="survey-comparison-wrap">
+<table aria-label="Cuadro comparativo de la pregunta 5" class="survey-comparison-table">
+<thead>
+<tr>
+<th>
+             Opción
+            </th>
+<th>
+             Cantidad
+            </th>
+<th>
+             Porcentaje
+            </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+             Sí, definitivamente
+            </td>
+<td>
+             3
+            </td>
+<td>
+             20.0%
+            </td>
+</tr>
+<tr>
+<td>
+             Tal vez, dependiendo del precio y los servicios
+            </td>
+<td>
+             12
+            </td>
+<td>
+             80.0%
+            </td>
+</tr>
+<tr>
+<td>
+             No estoy seguro(a)
+            </td>
+<td>
+             0
+            </td>
+<td>
+             0.0%
+            </td>
+</tr>
+<tr>
+<td>
+             No estaría interesado(a)
+            </td>
+<td>
+             0
+            </td>
+<td>
+             0.0%
+            </td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td>
+             Total
+            </td>
+<td>
+             15
+            </td>
+<td>
+             100%
+            </td>
+</tr>
+</tfoot>
+</table>
+</div>
+<figure class="plot-panel">
+<figcaption>
+          Gráfico estadístico circular · Pregunta 5
+         </figcaption>
+<div class="pie-layout">
+<div aria-label="Sí, definitivamente: 3 (20.0%); Tal vez, dependiendo del precio y los servicios: 12 (80.0%); No estoy seguro(a): 0 (0.0%); No estaría interesado(a): 0 (0.0%)" class="pie-chart" role="button" style="background:conic-gradient(#007a41 0.00000% 20.00000%, #f5a247 20.00000% 100.00000%)" tabindex="0">
+</div>
+<ul class="pie-legend">
+<li>
+<span class="pie-dot" style="background:#007a41">
+</span>
+<span class="pie-name">
+             Sí, definitivamente
+            </span>
+<strong>
+             3 · 20.0%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#f5a247">
+</span>
+<span class="pie-name">
+             Tal vez, dependiendo del precio y los servicios
+            </span>
+<strong>
+             12 · 80.0%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#3e9fbb">
+</span>
+<span class="pie-name">
+             No estoy seguro(a)
+            </span>
+<strong>
+             0 · 0.0%
+            </strong>
+</li>
+<li>
+<span class="pie-dot" style="background:#8a70ba">
+</span>
+<span class="pie-name">
+             No estaría interesado(a)
+            </span>
+<strong>
+             0 · 0.0%
+            </strong>
+</li>
+</ul>
+</div>
+<p aria-live="polite" class="chart-interaction-status">
+          Pasa el cursor sobre el círculo o selecciona una categoría para ver sus datos.
+         </p>
+</figure>
+<p class="survey-chart-source">
+         Fuente: encuesta virtual · 15 respuestas.
+        </p>
+</article>
+</div>
+<div class="survey-findings">
+<h4>
+        Principales hallazgos de las 15 respuestas
+       </h4>
+<p>
+        Frecuencia de viaje: 8 de 15 personas (53,3 %) visitan destinos turísticos una vez al año.
+       </p>
+<p>
+        Turismo de naturaleza: 10 de 15 personas (66,7 %) lo prefieren para Satipo.
+       </p>
+<p>
+        Factores de contratación: 6 personas (40 %) priorizan la buena atención y guías capacitados, y otras 6 (40 %) la seguridad y confianza.
+       </p>
+<p>
+        Medios de difusión: TikTok lidera con 7 respuestas (46,7 %), seguido de WhatsApp con 6 (40 %).
+       </p>
+<p>
+        Disposición a contratar: 12 personas (80 %) indican «Tal vez, dependiendo del precio y los servicios» y 3 (20 %) responden «Sí, definitivamente».
+       </p>
+</div>
+<div class="chapter5-summary">
+<div>
+<strong>
+         15
+        </strong>
+<span>
+         Respuestas registradas
+        </span>
+</div>
+<div>
+<strong>
+         5
+        </strong>
+<span>
+         Preguntas evaluadas
+        </span>
+</div>
+<div>
+<strong>
+         100 %
+        </strong>
+<span>
+         Datos del CSV proporcionado
+        </span>
+</div>
+</div>
+<div class="doc-notice">
+<strong>
+        Limitación:
+       </strong>
+       este cuestionario no solicita de forma directa una valoración del logotipo ni una puntuación de satisfacción. Sus gráficos permiten inferir intereses, criterios de elección y disposición a contratar; no una reputación comprobada.
+      </div>
+</div>
+<div class="cap5-block" id="capitulo-5-3">
+<h3>
+       5.3 Reputación Digital por Plataforma · Referencia: Zumag Perú
+      </h3>
+<p class="section-lead">
+       Para contextualizar el análisis de Yaguar Tours, se presenta como referencia externa la reputación digital de Zumag Peru Tour Operator, una agencia turística de Satipo. Estas calificaciones pertenecen a Zumag Perú, no a Yaguar Tours. Las fuentes pueden mostrar cifras diferentes según la plataforma y el momento de consulta.
+      </p>
+<div class="report-tablewrap">
+<table class="report-table word-original-table">
+<thead>
+<tr>
+<th>
+           Plataforma
+          </th>
+<th>
+           Puntuación Promedio
+          </th>
+<th>
+           Total Reseñas
+          </th>
+<th>
+           Aspecto Más Elogiado
+          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+           Tripadvisor
+          </td>
+<td>
+           4,7 / 5,0
+          </td>
+<td>
+           6 opiniones
+          </td>
+<td>
+           Turismo de naturaleza, aventura y experiencias locales; valoración global verificada en Tripadvisor.
+          </td>
+</tr>
+<tr>
+<td>
+           Google (datos reproducidos por Wanderlog)
+          </td>
+<td>
+           4,0 / 5,0
+          </td>
+<td>
+           40 reseñas
+          </td>
+<td>
+           Se mencionan profesionalismo, organización y seguridad en experiencias turísticas; dato indirecto.
+          </td>
+</tr>
+<tr>
+<td>
+           Facebook Reviews
+          </td>
+<td>
+           No verificado
+          </td>
+<td>
+           No disponible
+          </td>
+<td>
+           No se encontró una puntuación verificable para esta agencia.
+          </td>
+</tr>
+<tr>
+<td>
+           Gastronómic PERÚ
+          </td>
+<td>
+           No verificado
+          </td>
+<td>
+           No disponible
+          </td>
+<td>
+           No se identificó una valoración verificable para esta agencia.
+          </td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure aria-labelledby="rep-score-title" class="rep-score-figure">
+<h4 id="rep-score-title">
+        Valoraciones verificables de Zumag Perú
+       </h4>
+<p class="rep-score-subtitle">
+        Puntuaciones disponibles · escala de 0 a 5 · comparación entre fuentes distintas
+       </p>
+<div class="rep-score-chart">
+<div aria-label="Tripadvisor: 4,7 de 5; 6 opiniones · fuente directa" class="rep-score-row" role="img" tabindex="0" title="Tripadvisor: 4,7 / 5 · 6 opiniones · fuente directa">
+<span class="rep-score-name">
+          Tripadvisor
+         </span>
+<div class="rep-score-track">
+<div class="rep-score-fill" style="width:94.0%">
+</div>
+</div>
+<strong class="rep-score-value">
+          4,7 / 5
+         </strong>
+</div>
+<div aria-label="Google (Wanderlog): 4,0 de 5; 40 reseñas · fuente indirecta" class="rep-score-row" role="img" tabindex="0" title="Google (Wanderlog): 4,0 / 5 · 40 reseñas · fuente indirecta">
+<span class="rep-score-name">
+          Google (Wanderlog)
+         </span>
+<div class="rep-score-track">
+<div class="rep-score-fill" style="width:80.0%">
+</div>
+</div>
+<strong class="rep-score-value">
+          4,0 / 5
+         </strong>
+</div>
+<div class="rep-score-axis">
+<span>
+          0
+         </span>
+<span>
+          1
+         </span>
+<span>
+          2
+         </span>
+<span>
+          3
+         </span>
+<span>
+          4
+         </span>
+<span>
+          5
+         </span>
+</div>
+</div>
+<figcaption>
+        Figura 2. Reputación digital de Zumag Perú. Tripadvisor (consulta directa) y Google (puntuación reproducida por Wanderlog). No se incluyen plataformas sin datos comprobables.
+       </figcaption>
+</figure>
+<p class="original-source-note">
+<a href="https://www.tripadvisor.com.pe/Attraction_Review-g3250713-d5953937-Reviews-Zumag_Peru_Tour_Operator-Satipo_Junin_Region.html" rel="noopener noreferrer" target="_blank">
+        Tripadvisor — 4,7/5 y 6 opiniones
+       </a>
+       ·
+       <a href="https://wanderlog.com/place/details/640774/travel-and-tourism-agency-turismo-zumagperu-satipo-jun%C3%ADn-central-jungle-peru" rel="noopener noreferrer" target="_blank">
+        Wanderlog — Google: 4,0/5 y 40 reseñas
+       </a>
+       ·
+       <a href="https://turismozumagperu.com/contacto/" rel="noopener noreferrer" target="_blank">
+        Sitio oficial de Zumag Perú
+       </a>
+       · Consulta: 5 de noviembre de 2026. No deben interpretarse estos datos como reputación o reseñas de Yaguar Tours.
+      </p>
+</div>
+<div class="cap5-block" id="capitulo-5-4">
+<h3>
+       5.4 Brecha en Canales de Comunicación Digital
+      </h3>
+<p class="section-lead">
+       Para Yaguar Tours se plantea un esquema de atención digital con tiempos referenciales razonables para una agencia turística pequeña. Estos valores son
+       <strong>
+        estimaciones para organizar el servicio
+       </strong>
+       , no resultados de una medición real. La meta de mejora propuesta es responder en un máximo de 30 minutos durante el horario de atención.
+      </p>
+<figure class="response-figure original-word-figure">
+<svg aria-labelledby="respTitle respDesc" class="response-svg" role="img" viewbox="0 0 960 490" xmlns="http://www.w3.org/2000/svg">
+<title id="respTitle">
+         Tiempo de respuesta referencial de Yaguar Tours por canal digital
+        </title>
+<desc id="respDesc">
+         WhatsApp 15 minutos, Facebook Messenger 45 minutos, Instagram 60 minutos y TikTok 90 minutos. Meta propuesta: 30 minutos.
+        </desc>
+<rect fill="white" height="490" width="960">
+</rect>
+<text fill="#123b2b" font-family="Arial" font-size="24" font-weight="700" text-anchor="middle" x="480" y="42">
+         Tiempos de respuesta por canal digital
+        </text>
+<text fill="#5d7064" font-family="Arial" font-size="14" text-anchor="middle" x="480" y="67">
+         Escenario referencial para Yaguar Tours · minutos
+        </text>
+<line stroke="#e1e8e2" stroke-width="1" x1="180" x2="860" y1="365.0" y2="365.0">
+</line>
+<text fill="#52675a" font-family="Arial" font-size="14" text-anchor="end" x="162" y="370.0">
+         0
+        </text>
+<line stroke="#e1e8e2" stroke-width="1" x1="180" x2="860" y1="298.8" y2="298.8">
+</line>
+<text fill="#52675a" font-family="Arial" font-size="14" text-anchor="end" x="162" y="303.8">
+         30
+        </text>
+<line stroke="#e1e8e2" stroke-width="1" x1="180" x2="860" y1="232.5" y2="232.5">
+</line>
+<text fill="#52675a" font-family="Arial" font-size="14" text-anchor="end" x="162" y="237.5">
+         60
+        </text>
+<line stroke="#e1e8e2" stroke-width="1" x1="180" x2="860" y1="166.2" y2="166.2">
+</line>
+<text fill="#52675a" font-family="Arial" font-size="14" text-anchor="end" x="162" y="171.2">
+         90
+        </text>
+<line stroke="#e1e8e2" stroke-width="1" x1="180" x2="860" y1="100.0" y2="100.0">
+</line>
+<text fill="#52675a" font-family="Arial" font-size="14" text-anchor="end" x="162" y="105.0">
+         120
+        </text>
+<line stroke="#6c7e72" x1="180" x2="180" y1="100" y2="365">
+</line>
+<line stroke="#6c7e72" x1="180" x2="860" y1="365" y2="365">
+</line>
+<rect fill="#16864f" height="33.1" rx="5" width="100" x="215" y="331.9">
+<title>
+          WhatsApp: 15 minutos (referencial)
+         </title>
+</rect>
+<text fill="#0d5130" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" x="265" y="320.9">
+         15 min
+        </text>
+<text fill="#203b2a" font-family="Arial" font-size="14" font-weight="600" text-anchor="middle" x="265" y="392">
+         WhatsApp
+        </text>
+<rect fill="#16864f" height="99.4" rx="5" width="100" x="379" y="265.6">
+<title>
+          Facebook Messenger: 45 minutos (referencial)
+         </title>
+</rect>
+<text fill="#0d5130" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" x="429" y="254.6">
+         45 min
+        </text>
+<text fill="#203b2a" font-family="Arial" font-size="14" font-weight="600" text-anchor="middle" x="429" y="392">
+         Facebook Messenger
+        </text>
+<rect fill="#16864f" height="132.5" rx="5" width="100" x="543" y="232.5">
+<title>
+          Instagram DM: 60 minutos (referencial)
+         </title>
+</rect>
+<text fill="#0d5130" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" x="593" y="221.5">
+         60 min
+        </text>
+<text fill="#203b2a" font-family="Arial" font-size="14" font-weight="600" text-anchor="middle" x="593" y="392">
+         Instagram DM
+        </text>
+<rect fill="#16864f" height="198.8" rx="5" width="100" x="707" y="166.2">
+<title>
+          TikTok (comentarios): 90 minutos (referencial)
+         </title>
+</rect>
+<text fill="#0d5130" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" x="757" y="155.2">
+         90 min
+        </text>
+<text fill="#203b2a" font-family="Arial" font-size="14" font-weight="600" text-anchor="middle" x="757" y="392">
+         TikTok
+        </text>
+<text fill="#607368" font-family="Arial" font-size="12" text-anchor="middle" x="757" y="412">
+         (comentarios)
+        </text>
+<line stroke="#db812b" stroke-dasharray="10 7" stroke-width="3" x1="180" x2="860" y1="298.8" y2="298.8">
+</line>
+<text fill="#a65d18" font-family="Arial" font-size="13" font-weight="700" text-anchor="end" x="860" y="289.8">
+         Meta: 30 min
+        </text>
+<rect fill="#16864f" height="13" width="18" x="250" y="445">
+</rect>
+<text fill="#355847" font-family="Arial" font-size="13" x="275" y="457">
+         Tiempo referencial
+        </text>
+<line stroke="#db812b" stroke-dasharray="10 7" stroke-width="3" x1="525" x2="560" y1="451" y2="451">
+</line>
+<text fill="#355847" font-family="Arial" font-size="13" x="567" y="457">
+         Meta propuesta
+        </text>
+</svg>
+<figcaption>
+        Figura 3. Tiempos referenciales de atención en canales digitales de Yaguar Tours y meta de mejora propuesta. Fuente: elaboración propia (2026); cifras estimadas, no observadas.
+       </figcaption>
+<p class="response-note">
+        Los tiempos representan un ejemplo de planificación. Para obtener un promedio real deberán registrarse las horas de llegada y respuesta de consultas durante un periodo definido.
+       </p>
+</figure>
+<p class="original-source-note">
+       Gráfico conservado exactamente como se muestra en el documento proporcionado; no representa mediciones verificadas de Yaguar Tours.
+      </p>
+</div>
+</div>
+</section>
+<section class="publica-section alt" id="sentimientos">
+<div class="container">
+<span class="publica-kicker">
+      Complemento cualitativo · Capítulo 05
+     </span>
+<h2>
+      Análisis de sentimientos y observación directa
+     </h2>
+<div class="publica-grid">
+<article class="publica-card">
+<span class="publica-num">
+        POSITIVO
+       </span>
+<h3>
+        Valoración favorable
+       </h3>
+<p>
+        Comentarios que expresan interés, confianza y agrado. Requiere respuestas textuales reales.
+       </p>
+</article>
+<article class="publica-card">
+<span class="publica-num">
+        NEUTRO
+       </span>
+<h3>
+        Valoración descriptiva
+       </h3>
+<p>
+        Opiniones sin una preferencia o valoración favorable o desfavorable clara.
+       </p>
+</article>
+<article class="publica-card">
+<span class="publica-num">
+        NEGATIVO
+       </span>
+<h3>
+        Aspectos por mejorar
+       </h3>
+<p>
+        Dudas, desconfianza o dificultades expresadas por participantes reales.
+       </p>
+</article>
+</div>
+<p class="doc-notice">
+      Las cinco preguntas del Word son cerradas. Sus respuestas no constituyen comentarios de sentimiento; para cuantificar sentimiento sería necesario recoger opiniones abiertas adicionales.
+     </p>
+<h3 style="color:#004d2e;margin-top:30px">
+      Ficha de observación de cinco aplicaciones
+     </h3>
+<div class="report-tablewrap">
+<table class="report-table">
+<thead>
+<tr>
+<th>
+          Aplicación
+         </th>
+<th>
+          Aspecto a observar
+         </th>
+<th>
+          Estado
+         </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+          Logotipo
+         </td>
+<td>
+          Proporción, nitidez y reconocimiento
+         </td>
+<td class="planned">
+          Por verificar
+         </td>
+</tr>
+<tr>
+<td>
+          Portada digital
+         </td>
+<td>
+          Jerarquía, color y legibilidad
+         </td>
+<td class="planned">
+          Por verificar
+         </td>
+</tr>
+<tr>
+<td>
+          Publicación promocional
+         </td>
+<td>
+          Consistencia visual y claridad
+         </td>
+<td class="planned">
+          Por verificar
+         </td>
+</tr>
+<tr>
+<td>
+          Tarjeta corporativa
+         </td>
+<td>
+          Datos de contacto y tipografía
+         </td>
+<td class="planned">
+          Por verificar
+         </td>
+</tr>
+<tr>
+<td>
+          Uniforme / merchandising
+         </td>
+<td>
+          Uso correcto de identidad
+         </td>
+<td class="planned">
+          Por verificar
+         </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="publica-section" id="foda">
+<div class="container">
+<span class="publica-kicker">
+      Capítulo 06
+     </span>
+<h2>
+      6. Matriz FODA estratégica
+     </h2>
+<p class="section-lead">
+      Diagnóstico basado en la propuesta de marca y en el entorno turístico descrito en el Word. No debe confundirse con un resultado estadístico de encuestas.
+     </p>
+<div class="foda-matrix">
+<div class="foda-box">
+<h3>
+        Fortalezas
+       </h3>
+<ul>
+<li>
+         Identidad asociada a la selva y aventura.
+        </li>
+<li>
+         Destinos turísticos de Pangoa como eje de oferta.
+        </li>
+<li>
+         Potencial audiovisual de experiencias naturales.
+        </li>
+<li>
+         Cercanía con la cultura local.
+        </li>
+</ul>
+</div>
+<div class="foda-box">
+<h3>
+        Oportunidades
+       </h3>
+<ul>
+<li>
+         Interés por atractivos naturales.
+        </li>
+<li>
+         Difusión mediante videos cortos y reels.
+        </li>
+<li>
+         Colaboración con actores turísticos locales.
+        </li>
+<li>
+         Consultas y reservas en canales digitales.
+        </li>
+</ul>
+</div>
+<div class="foda-box">
+<h3>
+        Debilidades
+       </h3>
+<ul>
+<li>
+         Calendario editorial por consolidar.
+        </li>
+<li>
+         Falta de indicadores históricos.
+        </li>
+<li>
+         Procesos de respuesta por estandarizar.
+        </li>
+<li>
+         Producción de contenido por organizar.
+        </li>
+</ul>
+</div>
+<div class="foda-box">
+<h3>
+        Amenazas
+       </h3>
+<ul>
+<li>
+         Competencia turística y destinos alternativos.
+        </li>
+<li>
+         Variabilidad del clima y acceso a rutas.
+        </li>
+<li>
+         Saturación publicitaria en redes.
+        </li>
+<li>
+         Cambios en preferencias del viajero.
+        </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="publica-section alt" id="plan">
+<div class="container">
+<span class="publica-kicker">
+      Capítulo 07
+     </span>
+<h2>
+      7. Propuesta estratégica y plan de acción
+     </h2>
+<p class="section-lead">
+      Se mantienen seis líneas de intervención de la estructura original del informe, adaptadas al sector turístico. Los KPIs son
+      <strong>
+       metas propuestas
+      </strong>
+      , no resultados logrados.
+     </p>
+<div class="report-tablewrap">
+<table class="report-table">
+<thead>
+<tr>
+<th>
+          Estrategia
+         </th>
+<th>
+          Acciones clave
+         </th>
+<th>
+          Plazo
+         </th>
+<th>
+          KPI meta
+         </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+          1. Estandarización visual
+         </td>
+<td>
+          Aplicar manual de identidad a piezas físicas y digitales.
+         </td>
+<td>
+          Mes 1
+         </td>
+<td>
+          100% de piezas revisadas conforme al manual.
+         </td>
+</tr>
+<tr>
+<td>
+          2. Atención digital
+         </td>
+<td>
+          Implementar respuestas rápidas y consultas por WhatsApp.
+         </td>
+<td>
+          Meses 1–2
+         </td>
+<td>
+          Tiempo de primera respuesta menor a 30 minutos en horario de atención.
+         </td>
+</tr>
+<tr>
+<td>
+          3. Historias de los destinos
+         </td>
+<td>
+          Videos de naturaleza, rutas, cultura y aventura en Pangoa.
+         </td>
+<td>
+          Continuo
+         </td>
+<td>
+          Incrementar 25% la interacción mensual respecto a una línea base.
+         </td>
+</tr>
+<tr>
+<td>
+          4. Encuesta continua
+         </td>
+<td>
+          Aplicar formulario mediante código QR después de presentar la marca o realizar actividades.
+         </td>
+<td>
+          Mes 2
+         </td>
+<td>
+          Recoger al menos 30 respuestas útiles al mes (meta propuesta).
+         </td>
+</tr>
+<tr>
+<td>
+          5. Seguimiento a interesados
+         </td>
+<td>
+          Registro voluntario de contactos para informar de paquetes y promociones.
+         </td>
+<td>
+          Mes 3
+         </td>
+<td>
+          Medir contactos interesados y consultas respondidas.
+         </td>
+</tr>
+<tr>
+<td>
+          6. Experiencias y alianzas
+         </td>
+<td>
+          Actividades piloto y colaboración con guías o iniciativas locales.
+         </td>
+<td>
+          Meses 3–4
+         </td>
+<td>
+          Registrar participación y valoración posterior de asistentes.
+         </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="publica-section" id="conclusiones">
+<div class="container">
+<span class="publica-kicker">
+      Capítulo 08
+     </span>
+<h2>
+      8. Conclusiones y recomendaciones
+     </h2>
+<div class="publica-two">
+<article class="publica-panel">
+<h3>
+        8.1 Conclusiones
+       </h3>
+<ol>
+<li>
+         La propuesta Yaguar Tours presenta una identidad conceptual vinculada a naturaleza, cultura y aventura de Pangoa.
+        </li>
+<li>
+         El cuestionario identifica preferencias y condiciones de contratación; los resultados cuantitativos requieren respuestas reales.
+        </li>
+<li>
+         No se dispone aquí de métricas comprobadas de reputación en plataformas, satisfacción de clientes ni tiempos de atención.
+        </li>
+<li>
+         La matriz FODA orienta un proceso de mejora visual y comunicacional evaluable.
+        </li>
+</ol>
+</article>
+<article class="publica-panel">
+<h3>
+        8.2 Recomendaciones
+       </h3>
+<ol>
+<li>
+         Importar y tabular respuestas de la encuesta antes de formular porcentajes.
+        </li>
+<li>
+         Revisar las cinco aplicaciones visuales y documentar capturas como evidencia.
+        </li>
+<li>
+         Priorizar claridad de destinos, precios, contacto y seguridad turística.
+        </li>
+<li>
+         Medir indicadores antes y después de implementar el plan.
+        </li>
+</ol>
+</article>
+</div>
+<div class="publica-cta">
+<h3>
+       Recomendación principal
+      </h3>
+<p>
+       Conectar una identidad gráfica consistente con información clara y una experiencia digital confiable, y validar la percepción del público mediante encuestas reales.
+      </p>
+</div>
+</div>
+</section>
+<section class="publica-section alt" id="referencias">
+<div class="container">
+<span class="publica-kicker">
+      Capítulo 09
+     </span>
+<h2>
+      9. Referencias bibliográficas
+     </h2>
+<ol class="references bibliography">
+<li>
+       Capriotti, P. (2009).
+       <em>
+        Branding corporativo: Fundamentos para la gestión estratégica de la identidad corporativa.
+       </em>
+       Colección de Libros de la Empresa.
+      </li>
+<li>
+       Costa, J. (2004).
+       <em>
+        La imagen de marca: Un fenómeno social.
+       </em>
+       Paidós.
+      </li>
+<li>
+       Kaplan, A. M., y Haenlein, M. (2010). Users of the world, unite! The challenges and opportunities of Social Media.
+       <em>
+        Business Horizons, 53
+       </em>
+       (1), 59–68.
+      </li>
+<li>
+       Kotler, P., y Keller, K. L. (2016).
+       <em>
+        Marketing management
+       </em>
+       (15.ª ed.). Pearson.
+      </li>
+</ol>
+<p class="doc-source">
+      Contenido organizado a partir del documento «Informe_Imagen_Publica(1).docx». El instrumento de encuesta respeta las preguntas del documento; los objetivos y acciones están adaptados a Yaguar Tours.
+     </p>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div>
+<h3>
+       YAGUAR TOURS
+      </h3>
+<p>
+       Turismo · Naturaleza · Aventura
+      </p>
+<p>
+       Pangoa · Junín · Perú
+      </p>
+</div>
+<div>
+<h3>
+       Identidad
+      </h3>
+<ul>
+<li>
+        Identidad corporativa
+       </li>
+<li>
+        Identidad visual
+       </li>
+<li>
+        Imagen institucional
+       </li>
+<li>
+        Aplicaciones
+       </li>
+</ul>
+</div>
+<div>
+<h3>
+       Comunicación
+      </h3>
+<ul>
+<li>
+        Comunicación corporativa
+       </li>
+<li>
+        Manual de identidad
+       </li>
+<li>
+        Propuestas de mejora
+       </li>
+<li>
+        Auditoría de la imagen
+       </li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+     ©
+     <span data-year="">
+      2026
+     </span>
+     YAGUAR TOURS · Auditoría de la imagen.
+    </div>
+</div>
+</footer>
+<script defer="" src="js/yaguar.js">
+</script>
+<script>
+</script>
+<script>
+   (()=>{'use strict';
+// Interacción sincronizada entre barras (4.1) y gráficos circulares (5.2).
+const questions=[...document.querySelectorAll('.survey-question')],pies=[...document.querySelectorAll('.pie-result-card')];
+const selections=new Map();
+function dataFor(qi){const bars=[...(questions[qi]?.querySelectorAll('.bar-line')||[])];return bars.map((bar,index)=>{const label=bar.querySelector('.bar-name')?.textContent?.trim()||'';const match=(bar.querySelector('strong')?.textContent||'').match(/(\d+)\s*\(\s*([\d.,]+)%\s*\)/);return{index,label,count:match?+match[1]:0,pct:match?Number(match[2].replace(',','.')):0};});}
+function labelFor(d){return `<strong>${escapeHtml(d.label)}</strong>: ${d.count} ${d.count===1?'respuesta':'respuestas'} (${d.pct.toFixed(1)} %)`;}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function highlight(qi,index,lock=false){const data=dataFor(qi),d=data[index];if(!d)return;if(lock)selections.set(qi,selections.get(qi)===index?null:index);const selected=selections.get(qi);const active=Number.isInteger(selected)?selected:index;const shown=data[active];questions[qi]?.querySelectorAll('.bar-line').forEach((row,k)=>{row.classList.toggle('is-highlighted',k===active);row.classList.toggle('is-muted',k!==active);});pies[qi]?.querySelectorAll('.pie-legend li').forEach((row,k)=>{row.classList.toggle('is-highlighted',k===active);row.classList.toggle('is-muted',k!==active);});pies[qi]?.querySelector('.pie-chart')?.classList.add('is-active');[questions[qi],pies[qi]].forEach(parent=>{const status=parent?.querySelector('.chart-interaction-status');if(status)status.innerHTML=labelFor(shown)+(Number.isInteger(selected)?' · Selección fijada (clic para quitarla)':'');});}
+function clear(qi){if(Number.isInteger(selections.get(qi)))return;questions[qi]?.querySelectorAll('.bar-line').forEach(el=>el.classList.remove('is-highlighted','is-muted'));pies[qi]?.querySelectorAll('.pie-legend li').forEach(el=>el.classList.remove('is-highlighted','is-muted'));pies[qi]?.querySelector('.pie-chart')?.classList.remove('is-active');[questions[qi],pies[qi]].forEach(parent=>{const status=parent?.querySelector('.chart-interaction-status');if(status)status.textContent='Pasa el cursor o haz clic sobre una opción para ver cantidad y porcentaje.';});}
+function wire(container,qi,selector){if(!container)return;container.addEventListener('pointerover',e=>{const el=e.target.closest(selector);if(el&&container.contains(el))highlight(qi,[...container.querySelectorAll(selector)].indexOf(el));});container.addEventListener('pointerout',e=>{if(!container.contains(e.relatedTarget))clear(qi);});container.addEventListener('click',e=>{const el=e.target.closest(selector);if(el&&container.contains(el)){const index=[...container.querySelectorAll(selector)].indexOf(el);highlight(qi,index,true);if(selections.get(qi)===null)clear(qi);}});container.addEventListener('keydown',e=>{if(!['Enter',' '].includes(e.key))return;const el=e.target.closest(selector);if(el){e.preventDefault();el.click();}});}
+questions.forEach((q,qi)=>wire(q,qi,'.bar-line'));
+pies.forEach((card,qi)=>{wire(card,qi,'.pie-legend li');const pie=card.querySelector('.pie-chart');if(!pie)return;
+function segment(e){const rect=pie.getBoundingClientRect(),x=e.clientX-(rect.left+rect.width/2),y=e.clientY-(rect.top+rect.height/2),radius=Math.hypot(x,y);if(radius<rect.width*.28||radius>rect.width*.51)return -1;const angle=(Math.atan2(y,x)*180/Math.PI+450)%360;let cumulative=0;for(const d of dataFor(qi)){cumulative+=d.pct*3.6;if(angle<=cumulative+.001&&d.pct>0)return d.index;}return -1;}
+pie.addEventListener('pointermove',e=>{const k=segment(e);if(k>=0)highlight(qi,k);else clear(qi);});pie.addEventListener('pointerleave',()=>clear(qi));pie.addEventListener('click',e=>{const k=segment(e);if(k>=0){highlight(qi,k,true);if(selections.get(qi)===null)clear(qi);}});let keyboardIndex=0;pie.addEventListener('keydown',e=>{if(!['ArrowRight','ArrowLeft','Enter',' '].includes(e.key))return;e.preventDefault();const count=dataFor(qi).length;if(!count)return;if(e.key==='ArrowRight')keyboardIndex=(keyboardIndex+1)%count;if(e.key==='ArrowLeft')keyboardIndex=(keyboardIndex-1+count)%count;highlight(qi,keyboardIndex,e.key==='Enter'||e.key===' ');});});
+// Opciones accesibles incluso si el contenido del gráfico cambia tras importar otro CSV.
+const observer=new MutationObserver(()=>{questions.forEach(q=>q.querySelectorAll('.bar-line').forEach(el=>{if(!el.hasAttribute('tabindex')){el.tabIndex=0;el.setAttribute('role','button');}}));pies.forEach(q=>q.querySelectorAll('.pie-legend li').forEach(el=>{if(!el.hasAttribute('tabindex')){el.tabIndex=0;el.setAttribute('role','button');}}));});
+questions.forEach(q=>{const el=q.querySelector('.bar-chart');if(el)observer.observe(el,{childList:true});});pies.forEach(q=>{const el=q.querySelector('.pie-legend');if(el)observer.observe(el,{childList:true});});
+questions.forEach(q=>q.querySelectorAll('.bar-line').forEach(el=>{el.tabIndex=0;el.setAttribute('role','button');}));pies.forEach(q=>q.querySelectorAll('.pie-legend li').forEach(el=>{el.tabIndex=0;el.setAttribute('role','button');}));
+})();
+  </script>
+<div aria-hidden="true" aria-label="Vista ampliada de evidencias" aria-modal="true" class="evidence-lightbox" hidden="" id="evidenceLightbox" role="dialog">
+<div class="evidence-lightbox-panel">
+<div class="evidence-lightbox-header">
+<div>
+<span class="evidence-lightbox-kicker">
+       YAGUAR TOURS · EVIDENCIAS
+      </span>
+<strong id="evidenceLightboxTitle">
+       Evidencia 01
+      </strong>
+</div>
+<button aria-label="Cerrar imagen ampliada" class="evidence-lightbox-close" id="evidenceClose" type="button">
+      ✕
+     </button>
+</div>
+<div class="evidence-lightbox-stage">
+<button aria-label="Evidencia anterior" class="evidence-lightbox-nav" id="evidenceModalPrev" type="button">
+      ‹
+     </button>
+<img alt="" id="evidenceLargeImage"/>
+<div class="evidence-lightbox-missing" hidden="" id="evidenceLargeMissing">
+      La imagen todavía no está disponible en la carpeta
+      <code>
+       img
+      </code>
+      .
+     </div>
+<button aria-label="Evidencia siguiente" class="evidence-lightbox-nav" id="evidenceModalNext" type="button">
+      ›
+     </button>
+</div>
+<div class="evidence-lightbox-footer">
+<span id="evidenceCounter">
+      1 de 12
+     </span>
+<span>
+      Usa las flechas ← → para navegar y Esc para cerrar.
+     </span>
+</div>
+</div>
+</div>
+<script>
+   (() => {
+  'use strict';
+
+  const gallery = document.getElementById('evidenceGallery');
+  const modal = document.getElementById('evidenceLightbox');
+  if (!gallery || !modal) return;
+
+  const cards = [...gallery.querySelectorAll('.evidence-card')];
+  const preview = document.getElementById('evidenceLargeImage');
+  const missing = document.getElementById('evidenceLargeMissing');
+  const title = document.getElementById('evidenceLightboxTitle');
+  const counter = document.getElementById('evidenceCounter');
+  const closeButton = document.getElementById('evidenceClose');
+  const previousButton = document.getElementById('evidenceModalPrev');
+  const nextButton = document.getElementById('evidenceModalNext');
+
+  let activeIndex = 0;
+  let previousFocus = null;
+
+  function render(index) {
+    activeIndex = (index + cards.length) % cards.length;
+    const source = cards[activeIndex].querySelector('img');
+    const label = String(activeIndex + 1).padStart(2, '0');
+    title.textContent = `Evidencia ${label}`;
+    counter.textContent = `${activeIndex + 1} de ${cards.length}`;
+    missing.hidden = true;
+    preview.hidden = false;
+    preview.alt = source.alt;
+    preview.src = source.getAttribute('src');
+  }
+
+  preview.addEventListener('error', () => {
+    preview.hidden = true;
+    missing.hidden = false;
+  });
+  preview.addEventListener('load', () => {
+    preview.hidden = false;
+    missing.hidden = true;
+  });
+
+  function open(index) {
+    previousFocus = document.activeElement;
+    modal.hidden = false;
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('evidence-modal-open');
+    render(index);
+    closeButton.focus();
+  }
+
+  function close() {
+    modal.hidden = true;
+    modal.setAttribute('aria-hidden', 'true');
+    preview.removeAttribute('src');
+    document.body.classList.remove('evidence-modal-open');
+    previousFocus?.focus();
+  }
+
+  cards.forEach((card, index) => card.addEventListener('click', () => open(index)));
+  closeButton.addEventListener('click', close);
+  previousButton.addEventListener('click', () => render(activeIndex - 1));
+  nextButton.addEventListener('click', () => render(activeIndex + 1));
+  modal.addEventListener('click', event => { if (event.target === modal) close(); });
+
+  document.addEventListener('keydown', event => {
+    if (modal.hidden) return;
+    if (event.key === 'Escape') { event.preventDefault(); close(); }
+    if (event.key === 'ArrowLeft') { event.preventDefault(); render(activeIndex - 1); }
+    if (event.key === 'ArrowRight') { event.preventDefault(); render(activeIndex + 1); }
+    if (event.key === 'Tab') {
+      const controls = [closeButton, previousButton, nextButton];
+      const position = controls.indexOf(document.activeElement);
+      if (event.shiftKey && position <= 0) { event.preventDefault(); controls.at(-1).focus(); }
+      else if (!event.shiftKey && position === controls.length - 1) { event.preventDefault(); controls[0].focus(); }
+    }
+  });
+})();
+  </script>
+</body>
+</html>

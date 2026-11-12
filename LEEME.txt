@@ -1,0 +1,9 @@
+YAGUAR TOURS - Imágenes de ficha técnica
+
+1) Abra ficha-tecnica.html. Las imágenes están ubicadas en img/ y todas las rutas están configuradas.
+2) Imagen 1: img/imagologia-yaguar.png
+3) Imagen 2: img/iconologia-yaguar.png
+4) Imagen 3: img/imagen-verbal.jpg
+5) Se incluyeron recortes de los símbolos G y U extraídos del logo proporcionado.
+6) La portada utiliza el logo y el ejercicio visual reutiliza la imagen verbal proporcionada.
+7) La carpeta css/ de su proyecto original no fue adjuntada: consérvela al integrar estos HTML.
